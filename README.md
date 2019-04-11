@@ -1,17 +1,31 @@
-## Comparison between MaxQuant and PAW pipelines. Also comparison between edgeR statistical testing and basic two-sample t-test.
-**Click on the Jupyter notebook file (_KUR1502_MQ_PAW.ipynb_) to see the notebook in your browser. It may take a minute for the page to render and load, so please be patient.**
+# Comparison between MaxQuant and Comet/PAW pipelines (v2)
 
-## Data from this publication:
-> Huan, J., Hornick, N.I., Goloviznina, N.A., Kamimae-Lanning, A.N., David, L.L., Wilmarth, P.A., Mori, T., Chevillet, J.R., Narla, A., Roberts Jr, C.T. and Loriaux, M.M., 2015. 
-Coordinate regulation of residual bone marrow function by paracrine trafficking of AML exosomes. Leukemia, 29(12), p.2285.
+## Comparison between edgeR statistical testing and two-sample t-test
 
-This is a mouse bone marrow cell culture experiment with controls (n=3) and leukemia exosome-dosed cells (n=4). 
-It is a single TMT labeling design. MaxQuant (v1.5.7.4) was used with a mouse Swiss-Prot protein database. 10-plex TMT and Reporter 
-ion MS3 quant were selected. Reporter ion tolerance was 0.003 Da. Data was taken from the proteinGroups.txt summary file. Full details
-are provided on how data was prepped for importing into R. An R script, suitable for use in RStudio, and a Jupyter notebook are 
-provided for reproducing the analysis. An HTML report has been generated. Excel spreadsheets are present for both pipelines to 
-illustrate what starting data look like. The R analysis results are exported from R and have been incorporated back into a more
-final Excel file. This final sheet wold be a starting point for further annotation analysis, or other biological followup.
+#### Notebooks:
 
-A popular genomics statistical package (edgeR) is used in the analysis of results from both MaxQuant and PAW. An additional basic t-test 
-analysis of the MaxQuant data was also done and compared to the edgeR testing.
+[Comet/PAW](https://pwilmart.github.io/TMT_analysis_examples/KUR1502_PAW.html) - Updated notebook with analysis using Comet/PAW
+
+[MaxQuant](https://pwilmart.github.io/TMT_analysis_examples/KUR1502_MQ.html) - updated notebook with analysis using MaxQuant
+
+[old notebook](https://pwilmart.github.io/TMT_analysis_examples/KUR1502_MQ_PAW.html) - older notebook with first analysis
+
+## Data is from this publication:
+> Huan, J., Hornick, N.I., Goloviznina, N.A., Kamimae-Lanning, A.N., David, L.L., Wilmarth, P.A., Mori, T., Chevillet, J.R., Narla, A., Roberts Jr, C.T. and Loriaux, M.M., 2015. Coordinate regulation of residual bone marrow function by paracrine trafficking of AML exosomes. Leukemia, 29(12), p.2285.
+
+This was a mouse bone marrow cell culture experiment with controls (n=3) and leukemia exosome-dosed cells (n=4). The data was collected on a Thermo Fusion tribrid instrument using the SPS MS3 method. Two free data analysis options were explored: the [Comet/PAW pipeline](https://github.com/pwilmart/PAW_pipeline.git) or [MaxQuant](https://www.maxquant.org). A canonical UniProt mouse reference protein database was used in both analyses. More details on the search parameters are in the respective notebooks. There are two folders of results files: one for PAW and one for MaxQuant. Each folder has separate Jupyter notebooks for the TMT analysis. The notebooks are very similar in layout and are designed to be opened in side-by-side browser windows for a head-to-head comparison. Some of the markdown cells (mostly in the MaxQuant notebook) differ to illustrate important points. The notebooks are pre-rendered as HTML files and have links at the top of this file.
+
+A widely-used genomics statistical package (edgeR) is used in the analysis of results from both MaxQuant and PAW. An additional two-sample t-test analysis of the data is also include in at the bottom of the notebooks. There are many papers that have demonstrated the inadequacy of t-tests when replicate numbers are small in these types of omics results. It is clear from proper visualization of the data that edgeR is much better than the t-test.
+
+The notebooks in this update have better R code cell content. There is better use of functions and some simplifications in the workflow. The notebooks and R scripts in the repository can serve as starting templates for other analyses.
+
+Further information:
+
+- [Jupyter Notebooks](https://jupyter.org/)
+- [R kernel for notebooks](https://irkernel.github.io/)
+- [modern R](https://r4ds.had.co.nz/)
+- [RStudio](https://www.rstudio.com/)
+- [edgeR](https://bioconductor.org/packages/release/bioc/html/edgeR.html)
+
+
+updated April 11, 2019
