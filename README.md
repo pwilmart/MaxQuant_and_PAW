@@ -6,6 +6,10 @@
 
 [Comet/PAW](https://pwilmart.github.io/TMT_analysis_examples/KUR1502_PAW.html) - Updated notebook with analysis using Comet/PAW
 
+[Comet/PAW edgeR vs t-test](https://pwilmart.github.io/TMT_analysis_examples/KUR1502_PAW_t-test.html) - Comparison of edgeR to t-test
+
+[Comet/PAW edgeR vs limma](https://pwilmart.github.io/TMT_analysis_examples/KUR1502_PAW_limma.html) - Comparison of edgeR to limma
+
 [MaxQuant](https://pwilmart.github.io/TMT_analysis_examples/KUR1502_MQ.html) - updated notebook with analysis using MaxQuant
 
 [old notebook](https://pwilmart.github.io/TMT_analysis_examples/KUR1502_MQ_PAW.html) - older notebook with first analysis
@@ -28,4 +32,4 @@ Further information:
 - [edgeR](https://bioconductor.org/packages/release/bioc/html/edgeR.html)
 
 
-updated April 11, 2019
+updated April 28, 2019
