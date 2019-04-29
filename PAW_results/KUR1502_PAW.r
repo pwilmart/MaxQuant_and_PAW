@@ -70,15 +70,13 @@ format(round(colSums(paw_tmt_sl), digits = 0), big.mark = ",")
 # load data into DGEList object
 group <- c(rep("media", 3), rep("exosome", 4))
 y <- DGEList(counts = paw_tmt, group = group, genes = accession)
-
-# we can see what y looks like
-y
+y$samples
 
 # run the TMM normalization
 y <- calcNormFactors(y)
 
-# check what changed
-y
+# check what happened to the normalization factors
+y$samples
 
 apply_tmm_factors <- function(y, color = NULL, plot = TRUE) {
     # computes the tmm normalized data from the DGEList object
@@ -376,13 +374,13 @@ plot_top_tags <- function(results, nleft, nright, top_tags) {
     # results should have data first, then test results (two condition summary table)
     # nleft, nright are number of data points in each condition
     # top_tags is number of up and number of down top DE candidates to plot
-    # get top ipregulated
+    # get top up-regulated
     up <- results %>% 
         filter(logFC >= 0) %>%
         arrange(FDR)
     up <- up[1:top_tags, ]
     
-    # get top down regulated
+    # get top down-regulated
     down <- results %>% 
         filter(logFC < 0) %>%
         arrange(FDR)
@@ -402,9 +400,10 @@ plot_top_tags <- function(results, nleft, nright, top_tags) {
         barplot(vec, col = color, main = title)
     }    
 }
-# plot the top 25 up and 20 down proteins
+
+# plot the top 20 up and 20 down proteins
 set_plot_dimensions(7, 4)
-plot_top_tags(med_exo, 3, 4, 25)
+plot_top_tags(med_exo, 3, 4, 20)
 set_plot_dimensions(7, 7)
 
 # save the testing results
@@ -414,48 +413,4 @@ write.table(med_exo, file = "KUR1502_results.txt", sep = "\t",
 # log the session
 sessionInfo()
 
-# do the t-test on log transformed intensities to be safe
-ttest_PAW <- log2(paw_tmt_tmm)
-# add average ratio columns (non-logged ratios), fold-change column, and row names
-ttest_PAW$ave_med <- rowMeans(paw_tmt_tmm[1:3])
-ttest_PAW$ave_exo  <- rowMeans(paw_tmt_tmm[4:7])
-ttest_PAW$logFC <- log2(ttest_PAW$ave_exo / ttest_PAW$ave_med)
-row.names(ttest_PAW) <- accession
 
-# apply the basic two-sample t-test (we will pool variance)
-t.result <- apply(ttest_PAW, 1, function(x) t.test(x[1:3], x[4:7], var.equal = TRUE))
-# extract the p-value column from the t-test thingy 
-ttest_PAW$PValue <- unlist(lapply(t.result, function(x) x$p.value))
-# do a Benjamini-Hochberg multiple testing correction
-ttest_PAW$FDR <- p.adjust(ttest_PAW$PValue, method = "BH")
-
-# add a DE candidate status column
-ttest_PAW$candidate <- cut(ttest_PAW$FDR, breaks = c(-Inf, 0.01, 0.05, 0.10, 1.0), 
-                           labels = c("high", "med", "low", "no"))
-    
-# count up, down and the rest (FDR less than 0.05)
-all <- dim(ttest_PAW)[1]
-up <- dim(ttest_PAW[(ttest_PAW$FDR <= 0.10) & (ttest_PAW$logFC > 0.0), ])[1]
-down <- dim(ttest_PAW[(ttest_PAW$FDR <= 0.10) & (ttest_PAW$logFC <= 0.0), ])[1]
-print("This is like decideTest in edgeR - 10% FDR cut:")
-up 
-all - up - down
-down
-print("Candidate Counts:")
-summary(ttest_PAW$candidate)
-    
-# what does the test p-value distribution look like?
-ggplot(ttest_PAW, aes(PValue)) + 
-  geom_histogram(bins = 100, fill = "white", color = "black") + 
-  geom_hline(yintercept = mean(hist(ttest_PAW$PValue, breaks = 100, plot = FALSE)$counts[26:100])) +
-  ggtitle("PAW data with t-test p-value distribution")
-
-MA_plots(med_exo, "ave_med", "ave_exo", "PAW edgeR results", FALSE)
-MA_plots(ttest_PAW, "ave_med", "ave_exo", "PAW t-test results")
-
-scatter_plots(med_exo, "ave_med", "ave_exo", "PAW edgeR results", FALSE)
-scatter_plots(ttest_PAW, "ave_med", "ave_exo", "PAW t-test results")
-
-# compare volcano plots
-volcano_plot(med_exo, "ave_med", "ave_exo", "PAW edgeR results", 4)
-volcano_plot(ttest_PAW, "ave_med", "ave_exo", "PAW t-test results", 4)

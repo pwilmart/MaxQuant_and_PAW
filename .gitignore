@@ -34,3 +34,7 @@ vignettes/*.pdf
 
 # Shiny token, see https://shiny.rstudio.com/articles/shinyapps.html
 rsconnect/
+
+# extras
+MQ_results/.ipynb_checkpoints/
+PAW_results/.ipynb_checkpoints/
