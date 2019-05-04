@@ -130,7 +130,7 @@ pvalue_plot <- function(results, title) {
 }
 
 # check the p-value distrubution
-pvalue_plot(med_exo, "Media vs Exosome-dosed")
+pvalue_plot(med_exo, "(edgeR) Media vs Exosome-dosed")
 
 # see how many up and down candidates (10% FDR)
 summary(decideTests(et, p.value = 0.10))
@@ -154,7 +154,7 @@ log2FC_plots <- function(results, range, title) {
 }
 
 # can look at log2FC distributions as a check
-log2FC_plots(med_exo, 3, "LogFC by candidate for Media vs Exosome-dosed")
+log2FC_plots(med_exo, 3, "(edgeR) LogFC by candidate for Media vs Exosome-dosed")
 
 transform <- function(results, x, y) {
     # Make data frame with some transformed columns
@@ -214,7 +214,7 @@ MA_plots <- function(results, x, y, title, make_facet = TRUE) {
 }    
 
 # MA plots of DE candidates
-MA_plots(med_exo, "ave_med", "ave_exo", "Media versus exosome-dosed")
+MA_plots(med_exo, "ave_med", "ave_exo", "(edgeR) Media versus exosome-dosed")
 
 scatter_plots <- function(results, x, y, title, make_facet = TRUE) {
     # makes scatter-plot DE candidate ggplots
@@ -254,7 +254,7 @@ scatter_plots <- function(results, x, y, title, make_facet = TRUE) {
     }
 }
 
-scatter_plots(med_exo, "ave_med", "ave_exo", "Media versus exosome-dosed")
+#scatter_plots(med_exo, "ave_med", "ave_exo", "(edgeR) Media versus exosome-dosed")
 
 volcano_plot <- function(results, x, y, title, ymax) {
     # makes a volcano plot
@@ -277,7 +277,7 @@ volcano_plot <- function(results, x, y, title, ymax) {
 }
 
 # finally, a volcano plot
-volcano_plot(med_exo, "ave_med", "ave_exo", "Media versus exosome-dosed", 50)
+volcano_plot(med_exo, "ave_med", "ave_exo", "(edgeR) Media versus exosome-dosed", 50)
 
 # function to extract the identifier part of the accesssion
 get_identifier <- function(accession) {
@@ -289,7 +289,7 @@ set_plot_dimensions <- function(width_choice, height_choice) {
     options(repr.plot.width=width_choice, repr.plot.height=height_choice)
 }
 
-plot_top_tags <- function(results, nleft, nright, top_tags) {
+plot_top_tags <- function(results, nleft, nright, top_tags, prefix) {
     # results should have data first, then test results (two condition summary table)
     # nleft, nright are number of data points in each condition
     # top_tags is number of up and number of down top DE candidates to plot
@@ -313,7 +313,7 @@ plot_top_tags <- function(results, nleft, nright, top_tags) {
         row <- proteins[row_num, ]
         vec <- as.vector(unlist(row[1:(nleft + nright)]))
         names(vec) <- colnames(row[1:(nleft + nright)])
-        title <- str_c(get_identifier(row$Acc), ", int: ", scientific(mean(vec), 2), 
+        title <- str_c(prefix, get_identifier(row$Acc), ", int: ", scientific(mean(vec), 2), 
                        ", p-val: ", scientific(row$FDR, digits = 3), 
                        ", FC: ", round(row$FC, digits = 1))
         barplot(vec, col = color, main = title)
@@ -322,19 +322,23 @@ plot_top_tags <- function(results, nleft, nright, top_tags) {
 
 # plot the top 10 up and 10 down proteins
 set_plot_dimensions(7, 4)
-plot_top_tags(med_exo, 3, 4, 10)
+plot_top_tags(med_exo, 3, 4, 10, "(edgeR) ")
 set_plot_dimensions(7, 7)
 
 # copy the data
 limma_PAW <- paw_tmt_tmm
 row.names(limma_PAW) <- accession # add accessions as row names
 
-# set up the design matrix and the contrast
+# set up the design matrix
 group <- as.factor(c(rep("media", 3), rep("exosome", 4)))
 group <- factor(group, levels(group)[c(2, 1)]) # set the factor order
 design <- model.matrix(~ 0 + group)
 colnames(design) <- c("media", "exosome")
+design
+
+# make the contrast
 contrast <- makeContrasts(exosome-media, levels = design)
+contrast
 
 # do the linear model fitting
 data_limma <- log2(limma_PAW[c(M, E)])
@@ -343,7 +347,7 @@ fit <- lmFit(data_limma, design)
 # get the fit for the contrast of interest
 fit2 <- contrasts.fit(fit, contrast)
 
-# do the empirical Bayes moderation of the test statistic
+# do the empirical Bayes moderation of the test statistic (with trended variance)
 fit2 <- eBayes(fit2, trend = TRUE)
 
 # grab the information in topTable so we can get the data to plot candidates
@@ -380,8 +384,8 @@ summary(limma_PAW$candidate)
 pvalue_plot(limma_PAW, "PAW data with limma")
 
 # can look at log2FC distributions as a check
-log2FC_plots(med_exo, 3, "LogFC by candidate for edgeR")
-log2FC_plots(limma_PAW, 3, "LogFC by candidate for limma")
+log2FC_plots(med_exo, 3, "(edgeR) LogFC by candidate")
+log2FC_plots(limma_PAW, 3, "(limma) LogFC by candidate")
 
 MA_plots(med_exo, "ave_med", "ave_exo", "PAW edgeR results")
 MA_plots(limma_PAW, "ave_med", "ave_exo", "PAW limma results")
@@ -395,7 +399,7 @@ volcano_plot(med_exo, "ave_med", "ave_exo", "PAW edgeR results (expanded y-axis)
 volcano_plot(limma_PAW, "ave_med", "ave_exo", "PAW limma results", 6)
 
 set_plot_dimensions(7, 4)
-plot_top_tags(limma_PAW, 3, 4, 10)
+plot_top_tags(limma_PAW, 3, 4, 10, "(limma) ")
 set_plot_dimensions(7, 7)
 
 for (cutoff in c(0.10, 0.05, 0.01)) {
@@ -434,7 +438,7 @@ interesting <- setdiff(unique_limma, edgeR_candidates) # high in limma but not a
 not_interesting <- setdiff(unique_limma, interesting) # high in limma and also a candidate in edgeR
 cat(length(interesting), length(not_interesting))
 
-plot_selected <- function(results, nleft, nright, selected) {
+plot_selected <- function(results, nleft, nright, selected, prefix) {
     # results should have data first, then test results (two condition summary table)
     # nleft, nright are number of data points in each condition
     # selected is list of identifiers to plot
@@ -447,7 +451,7 @@ plot_selected <- function(results, nleft, nright, selected) {
         row <- proteins[row_num, ]
         vec <- as.vector(unlist(row[1:(nleft + nright)]))
         names(vec) <- colnames(row[1:(nleft + nright)])
-        title <- str_c(row$ident, ", int: ", scientific(mean(vec), 2), 
+        title <- str_c(prefix, row$ident, ", int: ", scientific(mean(vec), 2), 
                        ", p-val: ", scientific(row$FDR, digits = 3), 
                        ", FC: ", round(row$FC, digits = 1))
         barplot(vec, col = color, main = title)
@@ -455,12 +459,12 @@ plot_selected <- function(results, nleft, nright, selected) {
 }
 
 #set_plot_dimensions(7, 4)
-#plot_selected(limma_PAW, 3, 4, sample(not_interesting, 10))
+#plot_selected(limma_PAW, 3, 4, sample(not_interesting, 10), "(limma) ")
 #set_plot_dimensions(7, 7)
 
 # plot the t-test candidates that were not significant in edgeR
 #set_plot_dimensions(7, 4)
-#plot_selected(limma_PAW, 3, 4, interesting)
+#plot_selected(limma_PAW, 3, 4, interesting, "(limma) ")
 #set_plot_dimensions(7, 7)
 
 set_plot_dimensions(7, 7)
@@ -496,7 +500,7 @@ volcano_plot_facet(limma_PAW, "ave_med", "ave_exo", str_c("edgeR_", med_exo$cand
                    "limma faceted by edgeR candidate", 6)
 
 # save the testing results
-#write.table(med_exo, file = "KUR1502_results.txt", sep = "\t",
+#write.table(med_exo, file = "KUR1502_results_limma.txt", sep = "\t",
 #            row.names = FALSE, na = " ")
 
 # log the session

@@ -4,15 +4,29 @@
 
 #### Notebooks:
 
-[Comet/PAW](https://pwilmart.github.io/TMT_analysis_examples/KUR1502_PAW.html) - Updated notebook with analysis using Comet/PAW
+[Comet/PAW](https://pwilmart.github.io/TMT_analysis_examples/KUR1502_PAW.html) - Updated notebook with analysis using Comet/PAW results
+
+> Thorough workup of data with QC checks. Testing is done with edgeR.
 
 [Comet/PAW edgeR vs t-test](https://pwilmart.github.io/TMT_analysis_examples/KUR1502_PAW_t-test.html) - Comparison of edgeR to t-test
 
+> Comparison of edgeR to a two-sample t-test data workup.
+
 [Comet/PAW edgeR vs limma](https://pwilmart.github.io/TMT_analysis_examples/KUR1502_PAW_limma.html) - Comparison of edgeR to limma
 
-[MaxQuant](https://pwilmart.github.io/TMT_analysis_examples/KUR1502_MQ.html) - updated notebook with analysis using MaxQuant
+> Comparison of edgeR to limma. limma with its normal data distribution may be more appropriate for intensity data.
+
+[Comet/PAW edgeR vs limma-voom](https://pwilmart.github.io/TMT_analysis_examples/KUR1502_PAW_limma-voom.html) - Comparison of edgeR to limma with voom
+
+> The group that developed limma and edgeR has a recommended way to combine the best of both packages for analyzing RNA-seq data. We follow that outline here and see how it compares.
+
+[MaxQuant](https://pwilmart.github.io/TMT_analysis_examples/KUR1502_MQ.html) - updated notebook with analysis using MaxQuant results
+
+---
 
 [old notebook](https://pwilmart.github.io/TMT_analysis_examples/KUR1502_MQ_PAW.html) - older notebook with first analysis
+
+> Older MaxQuant version was used. Both PAW and MaxQuant results are in the same notebook.
 
 ## Data is from this publication:
 > Huan, J., Hornick, N.I., Goloviznina, N.A., Kamimae-Lanning, A.N., David, L.L., Wilmarth, P.A., Mori, T., Chevillet, J.R., Narla, A., Roberts Jr, C.T. and Loriaux, M.M., 2015. Coordinate regulation of residual bone marrow function by paracrine trafficking of AML exosomes. Leukemia, 29(12), p.2285.
@@ -32,4 +46,4 @@ Further information:
 - [edgeR](https://bioconductor.org/packages/release/bioc/html/edgeR.html)
 
 
-updated April 28, 2019
+updated May 4, 2019
