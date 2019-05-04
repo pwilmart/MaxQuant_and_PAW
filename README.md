@@ -6,7 +6,7 @@
 
 [Comet/PAW](https://pwilmart.github.io/TMT_analysis_examples/KUR1502_PAW.html) - Updated notebook with analysis using Comet/PAW results
 
-> Thorough workup of data with QC checks. Testing is done with edgeR.
+> Thorough workup of Comet/PAW data with QC checks. Testing is done with edgeR.
 
 [Comet/PAW edgeR vs t-test](https://pwilmart.github.io/TMT_analysis_examples/KUR1502_PAW_t-test.html) - Comparison of edgeR to t-test
 
@@ -21,6 +21,8 @@
 > The group that developed limma and edgeR has a recommended way to combine the best of both packages for analyzing RNA-seq data. We follow that outline here and see how it compares.
 
 [MaxQuant](https://pwilmart.github.io/TMT_analysis_examples/KUR1502_MQ.html) - updated notebook with analysis using MaxQuant results
+
+> Thorough workup of MaxQuant data with QC checks. Testing is done with edgeR.
 
 ---
 
