@@ -35,9 +35,9 @@
 
 This was a mouse bone marrow cell culture experiment with controls (n=3) and leukemia exosome-dosed cells (n=4). The data was collected on a Thermo Fusion tribrid instrument using the SPS MS3 method. Two free data analysis options were explored: the [Comet/PAW pipeline](https://github.com/pwilmart/PAW_pipeline.git) or [MaxQuant](https://www.maxquant.org). A canonical UniProt mouse reference protein database was used in both analyses. More details on the search parameters are in the respective notebooks. There are two folders of results files: one for PAW and one for MaxQuant. Each folder has separate Jupyter notebooks for the TMT analysis. The notebooks are very similar in layout and are designed to be opened in side-by-side browser windows for a head-to-head comparison. Some of the markdown cells (mostly in the MaxQuant notebook) differ to illustrate important points. The notebooks are pre-rendered as HTML files and have links at the top of this file.
 
-A widely-used genomics statistical package (edgeR) is used in the analysis of results from both MaxQuant and PAW. An additional two-sample t-test analysis of the data is also included at the bottom of the notebooks. There are many papers that have demonstrated the inadequacy of t-tests when replicate numbers are small in these types of omics results. It is clear from proper data visualization that edgeR is much better than the t-test.
+A widely-used genomics statistical package (edgeR) is used in the analysis of results from both MaxQuant (`KUR1502_MQ`) and PAW (`KUR1502_PAW`). Comparisons of edgeR to other statistical analyses are in separate notebooks (t-test:`KUR1502_PAW_t-test`, limma:`KUR1502_PAW_limma`, and limma-voom:`KUR1502_PAW_limma-voom`). There are many papers that have demonstrated the inadequacy of t-tests when replicate numbers are small in these types of omics results. limma and edgeR, with designs for these types of datasets, outperform t-tests in sensitivity and accuracy.
 
-The notebooks in this update have better R code cell content. There is better use of functions and some simplifications in the workflow. The notebooks and R scripts in the repository can serve as starting templates for other analyses.
+The notebooks in this 2019 update have nicer R code cell contents compared to the 2018 notebook. There is better use of functions and some simplifications in the workflow. The notebooks and R scripts in the repository can serve as starting templates for other analyses.
 
 Further information:
 
@@ -46,6 +46,7 @@ Further information:
 - [modern R](https://r4ds.had.co.nz/)
 - [RStudio](https://www.rstudio.com/)
 - [edgeR](https://bioconductor.org/packages/release/bioc/html/edgeR.html)
+- [limma](http://bioconductor.org/packages/release/bioc/html/limma.html)
 
 
 updated May 4, 2019
