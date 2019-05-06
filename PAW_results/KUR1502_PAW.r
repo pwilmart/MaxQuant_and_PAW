@@ -62,6 +62,7 @@ SL_Norm <- function(df, color = NULL, plot = TRUE) {
 # SL norm the tmt data
 paw_tmt_sl <- SL_Norm(paw_tmt, color)
 
+# compute column sums before and after normalization
 print("Before:")
 format(round(colSums(paw_tmt), digits = 0), big.mark = ",")
 print("After:")
@@ -105,8 +106,10 @@ apply_tmm_factors <- function(y, color = NULL, plot = TRUE) {
 # get the normalized data values
 paw_tmt_tmm <- apply_tmm_factors(y, color)
 
+# check table
 head(paw_tmt_tmm)
 
+# check column sums after TMM
 print("After TMM:")
 format(round(colSums(paw_tmt_tmm), digits = 0), big.mark = ",")
 

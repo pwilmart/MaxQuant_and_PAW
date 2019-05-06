@@ -12,7 +12,13 @@ MQ_raw <- read_tsv("KUR1502_data-export.txt")
 
 # separate accessions from the data
 accession <- MQ_raw$Accession
-MQ_tmt <- MQ_raw %>% select(-Accession)
+
+# get MS1 quantities
+intensities <- MQ_raw$Intensity
+ibaqs <- MQ_raw$iBAQ
+
+# get the reporter ion intensities
+MQ_tmt <- MQ_raw %>% select(-Accession, -Intensity, -iBAQ)
 
 head(MQ_tmt)
 nrow(MQ_tmt)
@@ -48,6 +54,7 @@ SL_Norm <- function(df, color = NULL, plot = TRUE) {
 # SL norm the tmt data
 MQ_tmt_sl <- SL_Norm(MQ_tmt, color)
 
+# compute column sums before and after normalization
 print("Before:")
 format(round(colSums(MQ_tmt), digits = 0), big.mark = ",")
 print("After:")
@@ -58,13 +65,14 @@ group <- c(rep("media", 3), rep("exosome", 4))
 y <- DGEList(counts = MQ_tmt, group = group, genes = accession)
 
 # we can see what y looks like
-y
+#y
+y$samples # this is shorter to view
 
 # run the TMM normalization
 y <- calcNormFactors(y)
 
 # check what changed
-y
+y$samples
 
 apply_tmm_factors <- function(y, color = NULL, plot = TRUE) {
     # computes the tmm normalized data from the DGEList object
@@ -93,8 +101,10 @@ apply_tmm_factors <- function(y, color = NULL, plot = TRUE) {
 # get the normalized data values
 MQ_tmt_tmm <- apply_tmm_factors(y, color)
 
+# check returned table
 head(MQ_tmt_tmm)
 
+# check column totals
 print("After TMM:")
 format(round(colSums(MQ_tmt_tmm), digits = 0), big.mark = ",")
 
@@ -388,9 +398,9 @@ plot_top_tags <- function(results, nleft, nright, top_tags) {
         barplot(vec, col = color, main = title)
     }    
 }
-# plot the top 25 up and 20 down proteins
+# plot the top 20 up and 20 down proteins
 set_plot_dimensions(7, 4)
-plot_top_tags(med_exo, 3, 4, 25)
+plot_top_tags(med_exo, 3, 4, 20)
 set_plot_dimensions(7, 7)
 
 # column totals from the dilution series (25, 20, 15, 10, 5, 2.5) data
@@ -399,18 +409,32 @@ PAW <- c(1996324081, 1562525113, 1207642244, 835353557, 400841992, 221591661)
 dilution <- data.frame(PAW = PAW, MQ = MQ)
 
 # from https://sejohnston.com/2012/08/09/a-quick-and-easy-function-to-plot-lm-results-in-r/
-ggplotRegression <- function (fit) {
+ggplotRegression <- function (fit, title) {
     require(ggplot2)
     ggplot(fit$model, aes_string(x = names(fit$model)[2], y = names(fit$model)[1])) + 
         geom_point(size = 3) +
         stat_smooth(method = "lm", col = "red") +
-        labs(title = paste("Adj R2 = ",signif(summary(fit)$adj.r.squared, 5), 
-                           "Intercept =",signif(fit$coef[[1]],5 ),
-                           " Slope =",signif(fit$coef[[2]], 5),
-                           " P =",signif(summary(fit)$coef[2,4], 5)))
+        labs(title = title, 
+             subtitle = paste("Adj R2 = ",signif(summary(fit)$adj.r.squared, 5), 
+                              "Intercept =",signif(fit$coef[[1]],5 ),
+                              " Slope =",signif(fit$coef[[2]], 5),
+                              " P =",signif(summary(fit)$coef[2,4], 5)))
 }
 
-ggplotRegression(lm(MQ ~ PAW, data = dilution))
+ggplotRegression(lm(MQ ~ PAW, data = dilution), "MQ reporter ions versus peak heights")
+
+# get summ of reporter ions for each protein
+totals  <- rowSums(MQ_tmt_tmm)
+
+# add to data frame with MS1 abundances (drop zeros and take logs)
+abundances <- data.frame(Total_TMT = totals, MS1_Intensity = intensities, iBAQ_Intensity = ibaqs)
+abundances <- log10(abundances[abundances$MS1_Intensity > 0, ])
+
+# make some scatter plots
+pairs.panels(abundances, lm = TRUE, 
+             main = "Protein relative abundance measures")
+ggplotRegression(lm(MS1_Intensity ~ Total_TMT, data = abundances), 
+                 "Correlation between MS1 and reporter ion intensities")
 
 # save the testing results
 write.table(med_exo, file = "KUR1502_MQ-results.txt", sep = "\t",
