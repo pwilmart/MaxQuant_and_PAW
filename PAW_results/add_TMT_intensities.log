@@ -1,0 +1,75 @@
+
+===============================================================
+ add_TMT_intensities.py, v1.0.0, written by Phil Wilmarth, OHSU
+===============================================================
+results file: grouped_protein_summary_8.txt
+getting intensities from SQT/TXT files
+reporter ions total: 108751 , below intensity cutoff: 34524
+   intensity cutoff was: 500.0
+length of tmt_intensity_dict: 86781
+length of unique_peptide_dict: 59624
+KUR1502_peptide_results_8.txt
+..length psm_list_dict: 62193
+..sum of all peptides: 84701
+..sum of all unique peptides: 79468
+length peptide_sets_dict is: 5427
+
+===============================================================
+ add_TMT_intensities.py, v1.0.0, written by Phil Wilmarth, OHSU
+===============================================================
+results file: grouped_protein_summary_8.txt
+getting intensities from SQT/TXT files
+reporter ions total: 108751 , below intensity cutoff: 34524
+   intensity cutoff was: 500.0
+length of tmt_intensity_dict: 86781
+length of unique_peptide_dict: 59624
+KUR1502_peptide_results_8.txt
+..length psm_list_dict: 62193
+..sum of all peptides: 84701
+..sum of all unique peptides: 79468
+length peptide_sets_dict is: 5427
+
+===============================================================
+ add_TMT_intensities.py, v1.0.0, written by Phil Wilmarth, OHSU
+===============================================================
+results file: grouped_protein_summary_8.txt
+getting intensities from SQT/TXT files
+reporter ions total: 108751 , below intensity cutoff: 38805
+   intensity cutoff was: 750.0
+length of tmt_intensity_dict: 86781
+length of unique_peptide_dict: 59624
+KUR1502_peptide_results_8.txt
+..length psm_list_dict: 62193
+..sum of all peptides: 84701
+..sum of all unique peptides: 79468
+length peptide_sets_dict is: 5427
+
+===============================================================
+ add_TMT_intensities.py, v1.0.0, written by Phil Wilmarth, OHSU
+===============================================================
+results file: grouped_protein_summary_8.txt
+getting intensities from SQT/TXT files
+reporter ions total: 108751 , below intensity cutoff: 34524
+   intensity cutoff was: 500.0
+length of tmt_intensity_dict: 86781
+length of unique_peptide_dict: 59624
+KUR1502_peptide_results_8.txt
+..length psm_list_dict: 62193
+..sum of all peptides: 84701
+..sum of all unique peptides: 79468
+length peptide_sets_dict is: 5427
+
+===============================================================
+ add_TMT_intensities.py, v1.0.0, written by Phil Wilmarth, OHSU
+===============================================================
+results file: grouped_protein_summary_8.txt
+getting intensities from SQT/TXT files
+reporter ions total: 86781 , below intensity cutoff: 28052
+   intensity cutoff was: 500.0
+length of tmt_intensity_dict: 86781
+length of unique_peptide_dict: 59624
+KUR1502_peptide_results_8.txt
+..length psm_list_dict: 62193
+..sum of all peptides: 84701
+..sum of all unique peptides: 79468
+length peptide_sets_dict is: 5427

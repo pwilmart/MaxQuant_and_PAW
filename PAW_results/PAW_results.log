@@ -1,0 +1,586 @@
+
+>>> starting PAW_results (v1.0.8) at: Fri Feb  8 15:53:54 2019
+...sample keys have been determined:
+   (1) KUR1502
+
+...processing KUR1502_01_OT_filtered.txt
+...processing KUR1502_02_OT_filtered.txt
+...processing KUR1502_03_OT_filtered.txt
+...processing KUR1502_04_OT_filtered.txt
+...processing KUR1502_05_OT_filtered.txt
+...processing KUR1502_06_OT_filtered.txt
+...processing KUR1502_07_OT_filtered.txt
+...processing KUR1502_08_OT_filtered.txt
+...processing KUR1502_09_OT_filtered.txt
+...processing KUR1502_10_OT_filtered.txt
+...processing KUR1502_11_OT_filtered.txt
+...processing KUR1502_12_OT_filtered.txt
+...processing KUR1502_13_OT_filtered.txt
+...processing KUR1502_14_OT_filtered.txt
+...processing KUR1502_15_OT_filtered.txt
+...processing KUR1502_16_OT_filtered.txt
+...processing KUR1502_17_OT_filtered.txt
+...processing KUR1502_18_OT_filtered.txt
+
+########### FDR REPORT ############
+
+unmodified peptides:
+ntt=2: 0(0)0.00, 47544(436)0.92, 38577(356)0.92, 5375(49)0.91, 
+ntt=1: 0(0)0.00, 0(0)0.00, 0(0)0.00, 0(0)0.00, 
+ntt=0: 0(0)0.00, 0(0)0.00, 0(0)0.00, 0(0)0.00, 
+
+modified peptides:
+ntt=2: 0(0)0.00, 6426(61)0.95, 8516(71)0.83, 1307(15)1.15, 
+ntt=1: 0(0)0.00, 0(0)0.00, 0(0)0.00, 0(0)0.00, 
+ntt=0: 0(0)0.00, 0(0)0.00, 0(0)0.00, 0(0)0.00, 
+
+distinct decoy sequences: 836
+total matches: 107745 (988) 0.92
+total valid matches: 107745 (988) 0.92
+
+################ PARSIMONY REPORT ###############
+
+   there were 8829 protein matches
+   there were 2855 proteins with too few potential peptide(s)
+   new matches length is: 5974
+   (1) redundant group: ['CONT_050|gi|280816|pir||A37343', 'CONT_098|gi|125077|sp|P13646|K1CM_HUMAN']
+
+   redundant "mis-match": CONT_074|gi|1070608|pir||KRHU9 and sp|P05784|K1C18_MOUSE
+      0 R.LAADDFR.T R.LAADDFR.V
+
+   redundant "mis-match": CONT_074|gi|1070608|pir||KRHU9 and sp|Q61414|K1C15_MOUSE
+      0 R.LAADDFR.T R.LAADDFR.L
+   (2) redundant group: ['CONT_074|gi|1070608|pir||KRHU9', 'CONT_099|gi|417200|sp|P08727|K1CS_HUMAN', 'sp|P05784|K1C18_MOUSE', 'sp|P19001|K1C19_MOUSE', 'sp|Q61414|K1C15_MOUSE']
+   (3) redundant group: ['REV_A0A087WR13', 'REV_E9Q0T8', 'REV_L7N1Y0']
+   (4) redundant group: ['sp|P01756|HVM12_MOUSE', 'sp|P01757|HVM13_MOUSE']
+
+   redundant "mis-match": sp|P03995|GFAP_MOUSE and sp|Q9Z2T6|KRT85_MOUSE
+      0 K.LALDIEIATYR.K K.LALDIEIATYR.R
+      1 R.FLEQQNK.A R.FLEQQNK.L
+   (5) redundant group: ['sp|P03995|GFAP_MOUSE', 'sp|Q9Z2T6|KRT85_MOUSE']
+   (6) redundant group: ['sp|P04186|CFAB_MOUSE', 'tr|B8JJN0|B8JJN0_MOUSE']
+   (7) redundant group: ['sp|P28700|RXRA_MOUSE', 'sp|P28704|RXRB_MOUSE', 'sp|P28705|RXRG_MOUSE']
+   (8) redundant group: ['sp|P31362|PO2F3_MOUSE', 'sp|Q00196|PO2F2_MOUSE']
+
+   redundant "mis-match": sp|P70694|DHB5_MOUSE and sp|Q91WR5|AK1CL_MOUSE
+      0 K.REDIFYTSK.V R.EDIFYTSK.V
+      1 R.EDIFYTSK.V R.REDIFYTSK.V
+
+   redundant "mis-match": sp|P70694|DHB5_MOUSE and tr|Q3UXL1|Q3UXL1_MOUSE
+      0 K.REDIFYTSK.V R.EDIFYTSK.L
+      1 R.EDIFYTSK.V R.REDIFYTSK.L
+
+   redundant "mis-match": sp|P70694|DHB5_MOUSE and tr|Q91WT7|Q91WT7_MOUSE
+      0 K.REDIFYTSK.V K.REDIFYTSK.L
+      1 R.EDIFYTSK.V R.EDIFYTSK.L
+   (9) redundant group: ['sp|P70694|DHB5_MOUSE', 'sp|Q91WR5|AK1CL_MOUSE', 'tr|Q3UXL1|Q3UXL1_MOUSE', 'tr|Q91WT7|Q91WT7_MOUSE']
+
+   redundant "mis-match": sp|P81269|ATF1_MOUSE and sp|Q01147|CREB1_MOUSE
+      0 K.TLIEELK.T K.TLIEELK.A
+   (10) redundant group: ['sp|P81269|ATF1_MOUSE', 'sp|Q01147|CREB1_MOUSE']
+   (11) redundant group: ['sp|Q61831|MK10_MOUSE', 'sp|Q91Y86|MK08_MOUSE']
+   (12) redundant group: ['sp|Q66JV4|R12BB_MOUSE', 'sp|Q80YR9|R12BA_MOUSE']
+   (13) redundant group: ['sp|Q8BL74|TF3C2_MOUSE', 'tr|Q3UU56|Q3UU56_MOUSE']
+   (14) redundant group: ['sp|Q8R3R8|GBRL1_MOUSE', 'sp|Q9DCD6|GBRAP_MOUSE']
+   (15) redundant group: ['sp|Q9CQP2|TPPC2_MOUSE', 'tr|Q8R3W2|Q8R3W2_MOUSE']
+   (16) redundant group: ['sp|Q9CQS8|SC61B_MOUSE', 'tr|E9PW43|E9PW43_MOUSE']
+   (17) redundant group: ['sp|Q9D1L0|CHCH2_MOUSE', 'tr|B2RPU8|B2RPU8_MOUSE']
+   (18) redundant group: ['sp|Q9D924|ISCA1_MOUSE', 'tr|I3ITR1|I3ITR1_MOUSE']
+   (19) redundant group: ['sp|Q9EPV8|UBL5_MOUSE', 'tr|A0A1Y7VKT9|A0A1Y7VKT9_MOUSE']
+   (20) redundant group: ['sp|Q9JIB3|BIR1G_MOUSE', 'sp|Q9QWK5|BIR1A_MOUSE', 'sp|Q9R016|BIR1E_MOUSE']
+   (21) redundant group: ['sp|Q9R226|KHDR3_MOUSE', 'sp|Q9WU01|KHDR2_MOUSE']
+   (22) redundant group: ['sp|Q9WTZ1|RBX2_MOUSE', 'tr|D3Z497|D3Z497_MOUSE']
+   (23) redundant group: ['sp|Q9Z172|SUMO3_MOUSE', 'tr|G3UZ60|G3UZ60_MOUSE']
+   (24) redundant group: ['tr|A0A075B5U7|A0A075B5U7_MOUSE', 'tr|A0A075B5V2|A0A075B5V2_MOUSE', 'tr|A0A075B5Y4|A0A075B5Y4_MOUSE', 'tr|A0A0A6YVW3|A0A0A6YVW3_MOUSE', 'tr|A0A0A6YWK5|A0A0A6YWK5_MOUSE', 'tr|A0A0A6YXA5|A0A0A6YXA5_MOUSE', 'tr|A0A0A6YXN4|A0A0A6YXN4_MOUSE']
+   (25) redundant group: ['tr|A0A087WP63|A0A087WP63_MOUSE', 'tr|A0A087WQ44|A0A087WQ44_MOUSE']
+   (26) redundant group: ['tr|A0A1Y7VLT7|A0A1Y7VLT7_MOUSE', 'tr|A0A1Y7VNG9|A0A1Y7VNG9_MOUSE', 'tr|J3QPI8|J3QPI8_MOUSE', 'tr|J3QQ02|J3QQ02_MOUSE']
+   (27) redundant group: ['tr|A2AK42|A2AK42_MOUSE', 'tr|A2AK44|A2AK44_MOUSE']
+   (28) redundant group: ['tr|E9Q0T8|E9Q0T8_MOUSE', 'tr|L7N1Y0|L7N1Y0_MOUSE']
+
+   redundant "mis-match": CONT_048|gi|553163 and CONT_070|gi|547752|sp|Q01546|K22O_HUMAN
+      2 R.FLEQQNK.M R.FLEQQNK.V
+
+   redundant "mis-match": CONT_048|gi|553163 and CONT_118|gi|125098|sp|P12035|K2C3_HUMAN
+      2 R.FLEQQNK.M R.FLEQQNK.V
+
+   redundant "mis-match": CONT_048|gi|553163 and CONT_142|gi|88053|pir||A29666
+      2 R.FLEQQNK.M R.FLEQQNK.V
+
+   redundant "mis-match": CONT_048|gi|553163 and sp|P07744|K2C4_MOUSE
+      2 R.FLEQQNK.M R.FLEQQNK.V
+
+   redundant "mis-match": CONT_048|gi|553163 and sp|P50446|K2C6A_MOUSE
+      2 R.FLEQQNK.M R.FLEQQNK.V
+
+   redundant "mis-match": CONT_048|gi|553163 and sp|Q8BGZ7|K2C75_MOUSE
+      2 R.FLEQQNK.M R.FLEQQNK.V
+
+   redundant "mis-match": CONT_048|gi|553163 and sp|Q8VED5|K2C79_MOUSE
+      2 R.FLEQQNK.M R.FLEQQNK.V
+
+   redundant "mis-match": CONT_048|gi|553163 and sp|Q922U2|K2C5_MOUSE
+      2 R.FLEQQNK.M R.FLEQQNK.V
+
+   redundant "mis-match": CONT_048|gi|553163 and sp|Q99M73|KRT84_MOUSE
+      2 R.FLEQQNK.M R.FLEQQNK.L
+
+   redundant "mis-match": CONT_048|gi|553163 and sp|Q9Z331|K2C6B_MOUSE
+      2 R.FLEQQNK.M R.FLEQQNK.V
+   (29) redundant group: ['CONT_048|gi|553163', 'CONT_070|gi|547752|sp|Q01546|K22O_HUMAN', 'CONT_071|gi|181400', 'CONT_118|gi|125098|sp|P12035|K2C3_HUMAN', 'CONT_142|gi|88053|pir||A29666', 'sp|P07744|K2C4_MOUSE', 'sp|P50446|K2C6A_MOUSE', 'sp|Q8BGZ7|K2C75_MOUSE', 'sp|Q8VED5|K2C79_MOUSE', 'sp|Q922U2|K2C5_MOUSE', 'sp|Q99M73|KRT84_MOUSE', 'sp|Q9Z331|K2C6B_MOUSE']
+   (30) redundant group: ['CONT_081|gi|307083', 'CONT_093|gi|30313']
+   (31) redundant group: ['CONT_094|gi|547751|sp|Q04695|K1CQ_HUMAN', 'sp|Q9QWL7|K1C17_MOUSE']
+   (32) redundant group: ['CONT_102|gi|88044|pir||S01068', 'CONT_119|gi|547753|sp|P19013|K2C4_HUMAN']
+   (33) redundant group: ['sp|O35153|BET1L_MOUSE', 'tr|A0A1B0GT05|A0A1B0GT05_MOUSE']
+   (34) redundant group: ['sp|O55137|ACOT1_MOUSE', 'sp|Q9QYR9|ACOT2_MOUSE']
+   (35) redundant group: ['sp|P29621|SPA3C_MOUSE', 'sp|Q03734|SPA3M_MOUSE']
+
+   redundant "mis-match": sp|P61025|CKS1_MOUSE and tr|Q3UNC9|Q3UNC9_MOUSE
+      1 K.THLM*SESEWR.N K.THLM*SESEWR.K
+      2 K.THLMSESEWR.N K.THLMSESEWR.K
+   (36) redundant group: ['sp|P61025|CKS1_MOUSE', 'tr|Q3UNC9|Q3UNC9_MOUSE']
+   (37) redundant group: ['sp|P63271|SPT4A_MOUSE', 'sp|Q9Z199|SPT4B_MOUSE']
+   (38) redundant group: ['sp|Q6IFZ9|K2C74_MOUSE', 'sp|Q9R0H5|K2C71_MOUSE']
+   (39) redundant group: ['sp|Q8BPB0|MOB1B_MOUSE', 'sp|Q921Y0|MOB1A_MOUSE']
+   (40) redundant group: ['sp|Q9R0X0|MED20_MOUSE', 'tr|G3UVU6|G3UVU6_MOUSE']
+   (41) redundant group: ['tr|Q5I0W6|Q5I0W6_MOUSE', 'tr|Q76I26|Q76I26_MOUSE', 'tr|Q8C6B0|Q8C6B0_MOUSE']
+   (42) redundant group: ['CONT_122|gi|88057|pir||A33652', 'CONT_168|gi|1708589|sp|P30654|K1CP_HUMAN']
+   (43) redundant group: ['sp|P04940|KV6A6_MOUSE', 'sp|P04941|KV6A7_MOUSE', 'sp|P04943|KV6A9_MOUSE', 'sp|P04944|KV6AA_MOUSE', 'tr|A0A0B4J1I8|A0A0B4J1I8_MOUSE']
+   (44) redundant group: ['sp|P48024|EIF1_MOUSE', 'sp|Q9CXU9|EIF1B_MOUSE']
+
+   redundant "mis-match": sp|P63011|RAB3A_MOUSE and sp|Q9CZT8|RAB3B_MOUSE
+      0 K.ILIIGNSSVGK.T K.LLIIGNSSVGK.T
+      2 K.TYSWDNAQVLLVGNK.C K.TYSWDNAQVILVGNK.C
+   (45) redundant group: ['sp|P63011|RAB3A_MOUSE', 'sp|Q9CZT8|RAB3B_MOUSE']
+
+   redundant "mis-match": sp|Q8BVP5|KC1G2_MOUSE and sp|Q8C4X2|KC1G3_MOUSE
+      1 K.LFTDLFDR.S K.LFTDLFDR.K
+   (46) redundant group: ['sp|Q8BVP5|KC1G2_MOUSE', 'sp|Q8C4X2|KC1G3_MOUSE']
+   (47) redundant group: ['sp|Q8CCS6|PABP2_MOUSE', 'tr|D3Z5F7|D3Z5F7_MOUSE']
+   (48) redundant group: ['sp|Q9JKV1|ADRM1_MOUSE', 'tr|A0A0A6YVU8|A0A0A6YVU8_MOUSE']
+   (49) redundant group: ['tr|A0A1Y7VJE9|A0A1Y7VJE9_MOUSE', 'tr|A0A1Y7VK80|A0A1Y7VK80_MOUSE', 'tr|J3QNT6|J3QNT6_MOUSE', 'tr|J3QP87|J3QP87_MOUSE', 'tr|Q3TQZ4|Q3TQZ4_MOUSE', 'tr|Q3UTA4|Q3UTA4_MOUSE']
+
+   redundant "mis-match": tr|Q5NCB3|Q5NCB3_MOUSE and tr|Q5SVP0|Q5SVP0_MOUSE
+      0 K.EIDAHLAK.A K.EIDAHLAK.T
+      1 K.SPHLLSDEPDTSLTEK.L K.IWLEALK.A
+      2 K.SSFINALR.G K.SPHLLSDEPDTSLTEK.L
+      3 R.IWLEALK.A K.SSFINALR.G
+   (50) redundant group: ['tr|Q5NCB3|Q5NCB3_MOUSE', 'tr|Q5SVP0|Q5SVP0_MOUSE']
+   (51) redundant group: ['sp|P0C0S6|H2AZ_MOUSE', 'sp|Q3THW5|H2AV_MOUSE']
+   (52) redundant group: ['sp|P47915|RL29_MOUSE', 'tr|F6QL70|F6QL70_MOUSE']
+   (53) redundant group: ['sp|Q3THG9|AASD1_MOUSE', 'tr|A2A4P4|A2A4P4_MOUSE']
+   (54) redundant group: ['sp|Q62440|TLE1_MOUSE', 'sp|Q62441|TLE4_MOUSE']
+
+   redundant "mis-match": CONT_073|gi|87303|pir||JS0487 and CONT_120|gi|125108|sp|P08729|K2C7_HUMAN
+      4 R.FLEQQNK.M R.FLEQQNK.L
+
+   redundant "mis-match": CONT_073|gi|87303|pir||JS0487 and CONT_140|gi|88045|pir||S05602
+      4 R.FLEQQNK.M R.FLEQQNK.L
+
+   redundant "mis-match": CONT_073|gi|87303|pir||JS0487 and CONT_141|gi|88049|pir||B24177
+      4 R.FLEQQNK.M R.FLEQQNK.L
+   (55) redundant group: ['CONT_073|gi|87303|pir||JS0487', 'CONT_103|gi|2119212|pir||I37982', 'CONT_120|gi|125108|sp|P08729|K2C7_HUMAN', 'CONT_124|gi|105815|pir||A34720', 'CONT_140|gi|88045|pir||S05602', 'CONT_141|gi|88049|pir||B24177', 'CONT_179|gi|2506774|sp|P05787|K2C8_HUMAN', 'sp|Q9DCV7|K2C7_MOUSE']
+   (56) redundant group: ['CONT_075|gi|1346342|sp|P08779|K1CX_HUMAN', 'CONT_117|gi|88047|pir||A24843']
+   (57) redundant group: ['sp|C0HKD8|MFA1A_MOUSE', 'sp|C0HKD9|MFA1B_MOUSE']
+   (58) redundant group: ['sp|P61327|MGN_MOUSE', 'sp|Q9CQL1|MGN2_MOUSE']
+   (59) redundant group: ['sp|P70691|UD12_MOUSE', 'sp|Q62452|UD19_MOUSE', 'sp|Q63886|UD11_MOUSE', 'sp|Q64435|UD16_MOUSE', 'tr|B2RT14|B2RT14_MOUSE', 'tr|D3Z748|D3Z748_MOUSE', 'tr|E9PXN7|E9PXN7_MOUSE', 'tr|K9J7B2|K9J7B2_MOUSE']
+   (60) redundant group: ['sp|Q3T9E4|TGTP2_MOUSE', 'sp|Q62293|TGTP1_MOUSE']
+   (61) redundant group: ['sp|Q8BSF4|PISD_MOUSE', 'tr|F6TVX7|F6TVX7_MOUSE']
+
+   redundant "mis-match": sp|Q8C181|MBNL2_MOUSE and sp|Q9JKP5|MBNL1_MOUSE
+      0 K.WLTLEVCR.Q K.WLTLEVCR.E
+      4 R.NNLIQQK.T R.NNLIQQK.N
+   (62) redundant group: ['sp|Q8C181|MBNL2_MOUSE', 'sp|Q9JKP5|MBNL1_MOUSE']
+   (63) redundant group: ['sp|Q924N4|S12A6_MOUSE', 'tr|Q6P6P5|Q6P6P5_MOUSE']
+   (64) redundant group: ['sp|Q9Z2Q6|SEPT5_MOUSE', 'tr|A0A338P6R8|A0A338P6R8_MOUSE']
+   (65) redundant group: ['CONT_049|gi|88052|pir||A32568', 'CONT_079|gi|125105|sp|P13647|K2C5_HUMAN']
+   (66) redundant group: ['sp|C0HKE1|H2A1B_MOUSE', 'sp|C0HKE2|H2A1C_MOUSE', 'sp|C0HKE3|H2A1D_MOUSE', 'sp|C0HKE4|H2A1E_MOUSE', 'sp|C0HKE5|H2A1G_MOUSE', 'sp|C0HKE6|H2A1I_MOUSE', 'sp|C0HKE7|H2A1N_MOUSE', 'sp|C0HKE8|H2A1O_MOUSE', 'sp|C0HKE9|H2A1P_MOUSE', 'sp|Q8BFU2|H2A3_MOUSE', 'sp|Q8CGP5|H2A1F_MOUSE', 'sp|Q8CGP6|H2A1H_MOUSE', 'sp|Q8CGP7|H2A1K_MOUSE', 'sp|Q8R1M2|H2AJ_MOUSE', 'tr|Q8CGP4|Q8CGP4_MOUSE']
+   (67) redundant group: ['sp|C0HKG5|RNT2A_MOUSE', 'sp|C0HKG6|RNT2B_MOUSE']
+   (68) redundant group: ['sp|P02301|H3C_MOUSE', 'sp|P84244|H33_MOUSE']
+   (69) redundant group: ['sp|P0DP26|CALM1_MOUSE', 'sp|P0DP27|CALM2_MOUSE', 'sp|P0DP28|CALM3_MOUSE']
+   (70) redundant group: ['sp|Q8VCG3|WDR74_MOUSE', 'tr|A0A1B0GS18|A0A1B0GS18_MOUSE']
+   (71) redundant group: ['CONT_083|gi|386849', 'CONT_130|gi|1346345|sp|P04259|K2CB_HUMAN', 'CONT_139|gi|71533|pir||KRHUEB']
+   (72) redundant group: ['CONT_129|gi|1346344|sp|P02538|K2CA_HUMAN', 'CONT_131|gi|1346346|sp|P48666|K2CC_HUMAN', 'CONT_132|gi|1346348|sp|P48668|K2CE_HUMAN']
+   (73) redundant group: ['sp|P14430|HA18_MOUSE', 'tr|P79568|P79568_MOUSE']
+   (74) redundant group: ['sp|P19253|RL13A_MOUSE', 'tr|A0A1B0GS68|A0A1B0GS68_MOUSE']
+   (75) redundant group: ['sp|Q64523|H2A2C_MOUSE', 'sp|Q6GSS7|H2A2A_MOUSE']
+   (76) redundant group: ['sp|P62082|RS7_MOUSE', 'tr|F6SVV1|F6SVV1_MOUSE']
+   (77) redundant group: ['sp|Q3UGC7|EI3JA_MOUSE', 'sp|Q66JS6|EI3JB_MOUSE']
+   (78) redundant group: ['sp|Q8CGP0|H2B3B_MOUSE', 'sp|Q9D2U9|H2B3A_MOUSE']
+   (79) redundant group: ['sp|Q8R4X3|RBM12_MOUSE', 'tr|V9GXJ1|V9GXJ1_MOUSE']
+   (80) redundant group: ['tr|E9QAY5|E9QAY5_MOUSE', 'tr|G5E8V9|G5E8V9_MOUSE']
+   (81) redundant group: ['sp|P0CG49|UBB_MOUSE', 'sp|P0CG50|UBC_MOUSE', 'sp|P62984|RL40_MOUSE', 'tr|A0A0A6YW67|A0A0A6YW67_MOUSE']
+   (82) redundant group: ['sp|P10853|H2B1F_MOUSE', 'sp|P10854|H2B1M_MOUSE', 'sp|Q64475|H2B1B_MOUSE', 'sp|Q64478|H2B1H_MOUSE', 'sp|Q64525|H2B2B_MOUSE', 'sp|Q6ZWY9|H2B1C_MOUSE', 'sp|Q8CGP1|H2B1K_MOUSE', 'sp|Q8CGP2|H2B1P_MOUSE']
+   (83) redundant group: ['sp|P62270|RS18_MOUSE', 'tr|A0A1Y7VKY1|A0A1Y7VKY1_MOUSE', 'tr|F6YVP7|F6YVP7_MOUSE']
+   (84) redundant group: ['sp|Q9CZY3|UB2V1_MOUSE', 'tr|E9PY39|E9PY39_MOUSE']
+   (85) redundant group: ['sp|P17879|HS71B_MOUSE', 'sp|Q61696|HS71A_MOUSE']
+   (86) redundant group: ['sp|P27048|RSMB_MOUSE', 'sp|P63163|RSMN_MOUSE']
+   (87) redundant group: ['sp|P61205|ARF3_MOUSE', 'sp|P84078|ARF1_MOUSE']
+   (88) redundant group: ['sp|Q91VM5|RMXL1_MOUSE', 'tr|A0A2I3BRL8|A0A2I3BRL8_MOUSE']
+   (89) redundant group: ['tr|A0A1W2P6Q8|A0A1W2P6Q8_MOUSE', 'tr|A0A1W2P855|A0A1W2P855_MOUSE']
+   (90) redundant group: ['sp|Q9D7G0|PRPS1_MOUSE', 'tr|G3UXL2|G3UXL2_MOUSE']
+   (91) redundant group: ['tr|A0A1W2P7H4|A0A1W2P7H4_MOUSE', 'tr|A0A1W2P7Z8|A0A1W2P7Z8_MOUSE']
+   (92) redundant group: ['CONT_064|gi|254622|bbs|112352', 'CONT_072|gi|547754|sp|P35908|K22E_HUMAN']
+   (93) redundant group: ['sp|Q922S4|PDE2A_MOUSE', 'tr|F7D3W5|F7D3W5_MOUSE']
+   (94) redundant group: ['CONT_068|gi|1082558|pir||S41161', 'CONT_105|gi|547748|sp|P35527|K1CI_HUMAN']
+   (95) redundant group: ['CONT_092|gi|71528|pir||KRHU0', 'CONT_121|gi|547749|sp|P13645|K1CJ_HUMAN']
+   (96) redundant group: ['sp|P60710|ACTB_MOUSE', 'sp|P63260|ACTG_MOUSE']
+
+   now matches is this long: 5808
+
+   4- ['CONT_017|gi|113576|sp|P02768|ALBU_HUMAN'] subset of [['CONT_015|gi|229552|prf||754920A'], ['CONT_016|gi|113574|sp|P02769|ALBU_BOVIN']]
+   6- ['CONT_045|gi|106849|pir||PC1102'] subset of [['CONT_092|gi|71528|pir||KRHU0', 'CONT_121|gi|547749|sp|P13645|K1CJ_HUMAN']]
+   8- ['CONT_047|gi|88042|pir||S14666'] subset of [['CONT_092|gi|71528|pir||KRHU0', 'CONT_121|gi|547749|sp|P13645|K1CJ_HUMAN']]
+   9- ['CONT_048|gi|553163', 'CONT_070|gi|547752|sp|Q01546|K22O_HUMAN', 'CONT_071|gi|181400', 'CONT_118|gi|125098|sp|P12035|K2C3_HUMAN', 'CONT_142|gi|88053|pir||A29666', 'sp|P07744|K2C4_MOUSE', 'sp|P50446|K2C6A_MOUSE', 'sp|Q8BGZ7|K2C75_MOUSE', 'sp|Q8VED5|K2C79_MOUSE', 'sp|Q922U2|K2C5_MOUSE', 'sp|Q99M73|KRT84_MOUSE', 'sp|Q9Z331|K2C6B_MOUSE'] subset of [['sp|Q3UV17|K22O_MOUSE'], ['tr|E9Q1Z0|E9Q1Z0_MOUSE'], ['CONT_084|gi|386850'], ['sp|P11679|K2C8_MOUSE'], ['CONT_073|gi|87303|pir||JS0487', 'CONT_103|gi|2119212|pir||I37982', 'CONT_120|gi|125108|sp|P08729|K2C7_HUMAN', 'CONT_124|gi|105815|pir||A34720', 'CONT_140|gi|88045|pir||S05602', 'CONT_141|gi|88049|pir||B24177', 'CONT_179|gi|2506774|sp|P05787|K2C8_HUMAN', 'sp|Q9DCV7|K2C7_MOUSE'], ['CONT_049|gi|88052|pir||A32568', 'CONT_079|gi|125105|sp|P13647|K2C5_HUMAN'], ['CONT_083|gi|386849', 'CONT_130|gi|1346345|sp|P04259|K2CB_HUMAN', 'CONT_139|gi|71533|pir||KRHUEB'], ['CONT_129|gi|1346344|sp|P02538|K2CA_HUMAN', 'CONT_131|gi|1346346|sp|P48666|K2CC_HUMAN', 'CONT_132|gi|1346348|sp|P48668|K2CE_HUMAN'], ['CONT_133|gi|1346349|sp|P48669|K2CF_HUMAN']]
+   15- ['CONT_074|gi|1070608|pir||KRHU9', 'CONT_099|gi|417200|sp|P08727|K1CS_HUMAN', 'sp|P05784|K1C18_MOUSE', 'sp|P19001|K1C19_MOUSE', 'sp|Q61414|K1C15_MOUSE'] subset of [['CONT_094|gi|547751|sp|Q04695|K1CQ_HUMAN', 'sp|Q9QWL7|K1C17_MOUSE'], ['CONT_101|gi|125081|sp|P19012|K1CO_HUMAN'], ['sp|P08730|K1C13_MOUSE'], ['CONT_122|gi|88057|pir||A33652', 'CONT_168|gi|1708589|sp|P30654|K1CP_HUMAN'], ['CONT_075|gi|1346342|sp|P08779|K1CX_HUMAN', 'CONT_117|gi|88047|pir||A24843'], ['CONT_082|gi|125080|sp|P02533|K1CN_HUMAN'], ['CONT_156|gi|1363944|pir||JC4313'], ['CONT_047|gi|88042|pir||S14666'], ['CONT_046|gi|88041|pir||A31994'], ['CONT_092|gi|71528|pir||KRHU0', 'CONT_121|gi|547749|sp|P13645|K1CJ_HUMAN']]
+   16- ['CONT_075|gi|1346342|sp|P08779|K1CX_HUMAN', 'CONT_117|gi|88047|pir||A24843'] subset of [['CONT_156|gi|1363944|pir||JC4313']]
+   17- ['CONT_080|gi|71532|pir||KRHUEA'] subset of [['CONT_137|gi|1346347|sp|P48667|K2CD_HUMAN'], ['CONT_129|gi|1346344|sp|P02538|K2CA_HUMAN', 'CONT_131|gi|1346346|sp|P48666|K2CC_HUMAN', 'CONT_132|gi|1346348|sp|P48668|K2CE_HUMAN']]
+   18- ['CONT_081|gi|307083', 'CONT_093|gi|30313'] subset of [['CONT_085|gi|386851'], ['CONT_073|gi|87303|pir||JS0487', 'CONT_103|gi|2119212|pir||I37982', 'CONT_120|gi|125108|sp|P08729|K2C7_HUMAN', 'CONT_124|gi|105815|pir||A34720', 'CONT_140|gi|88045|pir||S05602', 'CONT_141|gi|88049|pir||B24177', 'CONT_179|gi|2506774|sp|P05787|K2C8_HUMAN', 'sp|Q9DCV7|K2C7_MOUSE']]
+   20- ['CONT_083|gi|386849', 'CONT_130|gi|1346345|sp|P04259|K2CB_HUMAN', 'CONT_139|gi|71533|pir||KRHUEB'] subset of [['CONT_133|gi|1346349|sp|P48669|K2CF_HUMAN']]
+   21- ['CONT_084|gi|386850'] subset of [['CONT_049|gi|88052|pir||A32568', 'CONT_079|gi|125105|sp|P13647|K2C5_HUMAN']]
+   22- ['CONT_085|gi|386851'] subset of [['CONT_073|gi|87303|pir||JS0487', 'CONT_103|gi|2119212|pir||I37982', 'CONT_120|gi|125108|sp|P08729|K2C7_HUMAN', 'CONT_124|gi|105815|pir||A34720', 'CONT_140|gi|88045|pir||S05602', 'CONT_141|gi|88049|pir||B24177', 'CONT_179|gi|2506774|sp|P05787|K2C8_HUMAN', 'sp|Q9DCV7|K2C7_MOUSE']]
+   27- ['CONT_101|gi|125081|sp|P19012|K1CO_HUMAN'] subset of [['CONT_122|gi|88057|pir||A33652', 'CONT_168|gi|1708589|sp|P30654|K1CP_HUMAN'], ['CONT_075|gi|1346342|sp|P08779|K1CX_HUMAN', 'CONT_117|gi|88047|pir||A24843'], ['CONT_082|gi|125080|sp|P02533|K1CN_HUMAN'], ['CONT_156|gi|1363944|pir||JC4313']]
+   29- ['CONT_122|gi|88057|pir||A33652', 'CONT_168|gi|1708589|sp|P30654|K1CP_HUMAN'] subset of [['CONT_156|gi|1363944|pir||JC4313']]
+   30- ['CONT_128|gi|632732|bbs|152822'] subset of [['CONT_075|gi|1346342|sp|P08779|K1CX_HUMAN', 'CONT_117|gi|88047|pir||A24843'], ['CONT_156|gi|1363944|pir||JC4313']]
+   33- ['CONT_137|gi|1346347|sp|P48667|K2CD_HUMAN'] subset of [['CONT_129|gi|1346344|sp|P02538|K2CA_HUMAN', 'CONT_131|gi|1346346|sp|P48666|K2CC_HUMAN', 'CONT_132|gi|1346348|sp|P48668|K2CE_HUMAN']]
+   36- ['CONT_164|gi|1419564|gnl|PID|e251594'] subset of [['CONT_081|gi|307083', 'CONT_093|gi|30313'], ['CONT_085|gi|386851'], ['sp|P11679|K2C8_MOUSE'], ['CONT_073|gi|87303|pir||JS0487', 'CONT_103|gi|2119212|pir||I37982', 'CONT_120|gi|125108|sp|P08729|K2C7_HUMAN', 'CONT_124|gi|105815|pir||A34720', 'CONT_140|gi|88045|pir||S05602', 'CONT_141|gi|88049|pir||B24177', 'CONT_179|gi|2506774|sp|P05787|K2C8_HUMAN', 'sp|Q9DCV7|K2C7_MOUSE'], ['sp|P15331|PERI_MOUSE'], ['sp|P31001|DESM_MOUSE'], ['sp|P20152|VIME_MOUSE']]
+   37- ['CONT_171|gi|1890020|gnl|PID|d1020171'] subset of [['CONT_068|gi|1082558|pir||S41161', 'CONT_105|gi|547748|sp|P35527|K1CI_HUMAN']]
+   85- ['sp|A2A8L1|CHD5_MOUSE'] subset of [['sp|Q6PDQ2|CHD4_MOUSE']]
+   111- ['sp|A2AQP0|MYH7B_MOUSE'] subset of [['sp|Q02566|MYH6_MOUSE'], ['sp|Q91Z83|MYH7_MOUSE'], ['sp|P13541|MYH3_MOUSE'], ['sp|P13542|MYH8_MOUSE'], ['tr|G3UW82|G3UW82_MOUSE'], ['sp|Q5SX39|MYH4_MOUSE'], ['sp|Q5SX40|MYH1_MOUSE']]
+   113- ['sp|A2ARP1|VIP1_MOUSE'] subset of [['sp|Q6ZQB6|VIP2_MOUSE']]
+   126- ['sp|A3KFM7|CHD6_MOUSE'] subset of [['sp|Q09XV5|CHD8_MOUSE']]
+   153- ['sp|B2RSH2|GNAI1_MOUSE'] subset of [['sp|P08752|GNAI2_MOUSE']]
+   189- ['sp|E9Q3E1|AL3B2_MOUSE'] subset of [['sp|Q80VQ0|AL3B1_MOUSE']]
+   216- ['sp|J3QMK6|AL3B3_MOUSE'] subset of [['sp|Q80VQ0|AL3B1_MOUSE']]
+   236- ['sp|O08674|RBPJL_MOUSE'] subset of [['sp|P31266|SUH_MOUSE']]
+   262- ['sp|O08919|NUMBL_MOUSE'] subset of [['sp|Q9QZS3|NUMB_MOUSE']]
+   294- ['sp|O35215|DOPD_MOUSE'] subset of [['tr|G3UYJ7|G3UYJ7_MOUSE']]
+   329- ['sp|O35621|PMM1_MOUSE'] subset of [['sp|Q9Z2M7|PMM2_MOUSE']]
+   338- ['sp|O35660|GSTM6_MOUSE'] subset of [['sp|P19639|GSTM3_MOUSE'], ['sp|P10649|GSTM1_MOUSE']]
+   391- ['sp|O55047|TLK2_MOUSE'] subset of [['sp|Q8C0V0|TLK1_MOUSE']]
+   418- ['sp|O70228|ATP9A_MOUSE'] subset of [['sp|P98195|ATP9B_MOUSE']]
+   439- ['sp|O70456|1433S_MOUSE'] subset of [['sp|P61982|1433G_MOUSE'], ['sp|P68510|1433F_MOUSE']]
+   527- ['sp|O89032|SPD2A_MOUSE'] subset of [['sp|A2AAY5|SPD2B_MOUSE']]
+   539- ['sp|P00015|CYC2_MOUSE'] subset of [['sp|P62897|CYC_MOUSE']]
+   540- ['sp|P00342|LDHC_MOUSE'] subset of [['sp|P06151|LDHA_MOUSE']]
+   548- ['sp|P01756|HVM12_MOUSE', 'sp|P01757|HVM13_MOUSE'] subset of [['sp|P06330|HVM51_MOUSE']]
+   555- ['sp|P01898|HA10_MOUSE'] subset of [['tr|Q8HWB2|Q8HWB2_MOUSE']]
+   560- ['sp|P02089|HBB2_MOUSE'] subset of [['sp|P02088|HBB1_MOUSE'], ['tr|A8DUK4|A8DUK4_MOUSE']]
+   570- ['sp|P03995|GFAP_MOUSE', 'sp|Q9Z2T6|KRT85_MOUSE'] subset of [['tr|E9Q1Z0|E9Q1Z0_MOUSE'], ['CONT_073|gi|87303|pir||JS0487', 'CONT_103|gi|2119212|pir||I37982', 'CONT_120|gi|125108|sp|P08729|K2C7_HUMAN', 'CONT_124|gi|105815|pir||A34720', 'CONT_140|gi|88045|pir||S05602', 'CONT_141|gi|88049|pir||B24177', 'CONT_179|gi|2506774|sp|P05787|K2C8_HUMAN', 'sp|Q9DCV7|K2C7_MOUSE']]
+   596- ['sp|P06240|LCK_MOUSE'] subset of [['sp|P39688|FYN_MOUSE'], ['sp|Q04736|YES_MOUSE'], ['sp|P08103|HCK_MOUSE']]
+   630- ['sp|P08730|K1C13_MOUSE'] subset of [['CONT_047|gi|88042|pir||S14666'], ['CONT_046|gi|88041|pir||A31994'], ['CONT_092|gi|71528|pir||KRHU0', 'CONT_121|gi|547749|sp|P13645|K1CJ_HUMAN']]
+   634- ['sp|P09041|PGK2_MOUSE'] subset of [['sp|P09411|PGK1_MOUSE']]
+   643- ['sp|P09542|MYL3_MOUSE'] subset of [['sp|P05977|MYL1_MOUSE']]
+   654- ['sp|P0CG49|UBB_MOUSE', 'sp|P0CG50|UBC_MOUSE', 'sp|P62984|RL40_MOUSE', 'tr|A0A0A6YW67|A0A0A6YW67_MOUSE'] subset of [['sp|P62983|RS27A_MOUSE']]
+   656- ['sp|P0CW03|LY6C2_MOUSE'] subset of [['sp|P0CW02|LY6C1_MOUSE']]
+   690- ['sp|P11679|K2C8_MOUSE'] subset of [['CONT_073|gi|87303|pir||JS0487', 'CONT_103|gi|2119212|pir||I37982', 'CONT_120|gi|125108|sp|P08729|K2C7_HUMAN', 'CONT_124|gi|105815|pir||A34720', 'CONT_140|gi|88045|pir||S05602', 'CONT_141|gi|88049|pir||B24177', 'CONT_179|gi|2506774|sp|P05787|K2C8_HUMAN', 'sp|Q9DCV7|K2C7_MOUSE']]
+   693- ['sp|P11798|KCC2A_MOUSE'] subset of [['sp|P28652|KCC2B_MOUSE'], ['sp|Q6PHZ2|KCC2D_MOUSE']]
+   708- ['sp|P12849|KAP1_MOUSE'] subset of [['sp|Q9DBC7|KAP0_MOUSE']]
+   731- ['sp|P14427|HA14_MOUSE'] subset of [['sp|P01897|HA1L_MOUSE'], ['tr|Q8HWB2|Q8HWB2_MOUSE']]
+   734- ['sp|P14431|HA19_MOUSE'] subset of [['sp|P14429|HA17_MOUSE']]
+   762- ['sp|P16277|BLK_MOUSE'] subset of [['sp|P25911|LYN_MOUSE']]
+   765- ['sp|P16381|DDX3L_MOUSE'] subset of [['sp|Q62167|DDX3X_MOUSE']]
+   790- ['sp|P17897|LYZ1_MOUSE'] subset of [['sp|P08905|LYZ2_MOUSE']]
+   802- ['sp|P18872|GNAO_MOUSE'] subset of [['sp|B2RSH2|GNAI1_MOUSE'], ['sp|Q9DC51|GNAI3_MOUSE'], ['sp|P08752|GNAI2_MOUSE']]
+   822- ['sp|P20444|KPCA_MOUSE'] subset of [['sp|P68404|KPCB_MOUSE']]
+   931- ['sp|P28738|KIF5C_MOUSE'] subset of [['sp|Q61768|KINH_MOUSE']]
+   945- ['sp|P29621|SPA3C_MOUSE', 'sp|Q03734|SPA3M_MOUSE'] subset of [['sp|Q91WP6|SPA3N_MOUSE'], ['sp|P07759|SPA3K_MOUSE'], ['sp|Q5I2A0|SPA3G_MOUSE']]
+   960- ['sp|P31254|UBA1Y_MOUSE'] subset of [['sp|Q02053|UBA1_MOUSE']]
+   963- ['sp|P31362|PO2F3_MOUSE', 'sp|Q00196|PO2F2_MOUSE'] subset of [['sp|P25425|PO2F1_MOUSE']]
+   977- ['sp|P33173|KIF1A_MOUSE'] subset of [['sp|O35071|KIF1C_MOUSE'], ['sp|Q60575|KIF1B_MOUSE']]
+   979- ['sp|P33175|KIF5A_MOUSE'] subset of [['sp|P28738|KIF5C_MOUSE'], ['sp|Q61768|KINH_MOUSE']]
+   992- ['sp|P35175|CYT1_MOUSE'] subset of [['tr|Q497J0|Q497J0_MOUSE']]
+   1032- ['sp|P39053|DYN1_MOUSE'] subset of [['sp|P39054|DYN2_MOUSE']]
+   1035- ['sp|P39688|FYN_MOUSE'] subset of [['sp|Q04736|YES_MOUSE']]
+   1079- ['sp|P45377|ALD2_MOUSE'] subset of [['tr|G5E895|G5E895_MOUSE']]
+   1081- ['sp|P45591|COF2_MOUSE'] subset of [['sp|P18760|COF1_MOUSE']]
+   1088- ['sp|P46425|GSTP2_MOUSE'] subset of [['sp|P19157|GSTP1_MOUSE']]
+   1107- ['sp|P47758|SRPRB_MOUSE'] subset of [['tr|E9Q035|E9Q035_MOUSE']]
+   1156- ['sp|P49945|FRIL2_MOUSE'] subset of [['sp|P29391|FRIL1_MOUSE']]
+   1207- ['sp|P52734|FGD1_MOUSE'] subset of [['sp|Q91ZT5|FGD4_MOUSE'], ['sp|O88842|FGD3_MOUSE']]
+   1274- ['sp|P57722|PCBP3_MOUSE'] subset of [['sp|Q61990|PCBP2_MOUSE']]
+   1290- ['sp|P58321|UCHL4_MOUSE'] subset of [['sp|Q9JKB1|UCHL3_MOUSE']]
+   1309- ['sp|P59279|RAB2B_MOUSE'] subset of [['sp|P53994|RAB2A_MOUSE']]
+   1328- ['sp|P60764|RAC3_MOUSE'] subset of [['sp|P63001|RAC1_MOUSE']]
+   1331- ['sp|P60840|ENSA_MOUSE'] subset of [['sp|P56212|ARP19_MOUSE']]
+   1340- ['sp|P61079|UB2D3_MOUSE'] subset of [['sp|P62838|UB2D2_MOUSE']]
+   1355- ['sp|P61294|RAB6B_MOUSE'] subset of [['sp|P35279|RAB6A_MOUSE']]
+   1407- ['sp|P62484|ABI2_MOUSE'] subset of [['sp|Q8CBW3|ABI1_MOUSE']]
+   1409- ['sp|P62492|RB11A_MOUSE'] subset of [['sp|P46638|RB11B_MOUSE']]
+   1412- ['sp|P62631|EF1A2_MOUSE'] subset of [['sp|P10126|EF1A1_MOUSE']]
+   1417- ['sp|P62737|ACTA_MOUSE'] subset of [['sp|P68033|ACTC_MOUSE'], ['sp|P68134|ACTS_MOUSE']]
+   1427- ['sp|P62823|RAB3C_MOUSE'] subset of [['sp|P35276|RAB3D_MOUSE']]
+   1454- ['sp|P63011|RAB3A_MOUSE', 'sp|Q9CZT8|RAB3B_MOUSE'] subset of [['sp|P35276|RAB3D_MOUSE']]
+   1466- ['sp|P63143|KCAB1_MOUSE'] subset of [['sp|P62482|KCAB2_MOUSE']]
+   1475- ['sp|P63268|ACTH_MOUSE'] subset of [['sp|P62737|ACTA_MOUSE'], ['sp|P68033|ACTC_MOUSE'], ['sp|P68134|ACTS_MOUSE']]
+   1487- ['sp|P68033|ACTC_MOUSE'] subset of [['sp|P68134|ACTS_MOUSE']]
+   1513- ['sp|P70265|F262_MOUSE'] subset of [['tr|A7UAK5|A7UAK5_MOUSE']]
+   1514- ['sp|P70266|F261_MOUSE'] subset of [['sp|Q6DTY7|F264_MOUSE']]
+   1535- ['sp|P70351|EZH1_MOUSE'] subset of [['sp|Q61188|EZH2_MOUSE']]
+   1553- ['sp|P70691|UD12_MOUSE', 'sp|Q62452|UD19_MOUSE', 'sp|Q63886|UD11_MOUSE', 'sp|Q64435|UD16_MOUSE', 'tr|B2RT14|B2RT14_MOUSE', 'tr|D3Z748|D3Z748_MOUSE', 'tr|E9PXN7|E9PXN7_MOUSE', 'tr|K9J7B2|K9J7B2_MOUSE'] subset of [['sp|Q6ZQM8|UD17C_MOUSE']]
+   1554- ['sp|P70694|DHB5_MOUSE', 'sp|Q91WR5|AK1CL_MOUSE', 'tr|Q3UXL1|Q3UXL1_MOUSE', 'tr|Q91WT7|Q91WT7_MOUSE'] subset of [['sp|Q8K023|AKC1H_MOUSE']]
+   1555- ['sp|P70696|H2B1A_MOUSE'] subset of [['sp|P10853|H2B1F_MOUSE', 'sp|P10854|H2B1M_MOUSE', 'sp|Q64475|H2B1B_MOUSE', 'sp|Q64478|H2B1H_MOUSE', 'sp|Q64525|H2B2B_MOUSE', 'sp|Q6ZWY9|H2B1C_MOUSE', 'sp|Q8CGP1|H2B1K_MOUSE', 'sp|Q8CGP2|H2B1P_MOUSE']]
+   1573- ['sp|P83510|TNIK_MOUSE'] subset of [['sp|Q9JM52|MINK1_MOUSE'], ['sp|P97820|M4K4_MOUSE']]
+   1582- ['sp|P84075|HPCA_MOUSE'] subset of [['sp|P62748|HPCL1_MOUSE']]
+   1590- ['sp|P86048|RL10L_MOUSE'] subset of [['sp|Q6ZWV3|RL10_MOUSE']]
+   1598- ['sp|P97324|G6PD2_MOUSE'] subset of [['sp|Q00612|G6PD1_MOUSE']]
+   1619- ['sp|P97427|DPYL1_MOUSE'] subset of [['sp|O08553|DPYL2_MOUSE']]
+   1682- ['sp|Q01514|GBP1_MOUSE'] subset of [['sp|Q9Z0E6|GBP2_MOUSE']]
+   1685- ['sp|Q01768|NDKB_MOUSE'] subset of [['tr|E9PZF0|E9PZF0_MOUSE']]
+   1690- ['sp|Q02111|KPCT_MOUSE'] subset of [['sp|P28867|KPCD_MOUSE']]
+   1692- ['sp|Q02257|PLAK_MOUSE'] subset of [['sp|Q02248|CTNB1_MOUSE']]
+   1705- ['sp|Q03350|TSP2_MOUSE'] subset of [['sp|P35441|TSP1_MOUSE']]
+   1723- ['sp|Q05895|TSP3_MOUSE'] subset of [['sp|Q03350|TSP2_MOUSE'], ['sp|P35441|TSP1_MOUSE']]
+   1735- ['sp|Q07133|H1T_MOUSE'] subset of [['sp|P43274|H14_MOUSE'], ['sp|P43277|H13_MOUSE'], ['sp|P15864|H12_MOUSE']]
+   1785- ['sp|Q32MW3|ACO10_MOUSE'] subset of [['sp|Q9R0X4|ACOT9_MOUSE']]
+   1839- ['sp|Q3TTC2|TYY2_MOUSE'] subset of [['sp|Q00899|TYY1_MOUSE']]
+   1907- ['sp|Q3UH66|WNK2_MOUSE'] subset of [['sp|P83741|WNK1_MOUSE']]
+   1972- ['sp|Q3UX61|NAA11_MOUSE'] subset of [['tr|Q9CQX6|Q9CQX6_MOUSE']]
+   1975- ['sp|Q3UYH7|ARBK2_MOUSE'] subset of [['sp|Q99MK8|ARBK1_MOUSE']]
+   1986- ['sp|Q3V132|ADT4_MOUSE'] subset of [['sp|P48962|ADT1_MOUSE'], ['sp|P51881|ADT2_MOUSE']]
+   2011- ['sp|Q504N7|IFIXL_MOUSE'] subset of [['sp|Q8BV49|IFIX_MOUSE']]
+   2016- ['sp|Q50H33|KCTD8_MOUSE'] subset of [['tr|Q8C7J6|Q8C7J6_MOUSE']]
+   2055- ['sp|Q5QNQ6|OSBP2_MOUSE'] subset of [['sp|Q3B7Z2|OSBP1_MOUSE']]
+   2076- ['sp|Q5SV42|ILEUC_MOUSE'] subset of [['sp|Q8VHP7|ILEUB_MOUSE'], ['sp|Q9D154|ILEUA_MOUSE']]
+   2216- ['sp|Q61301|CTNA2_MOUSE'] subset of [['sp|P26231|CTNA1_MOUSE']]
+   2221- ['sp|Q61390|TCPW_MOUSE'] subset of [['sp|P80317|TCPZ_MOUSE']]
+   2223- ['sp|Q61411|RASH_MOUSE'] subset of [['sp|P08556|RASN_MOUSE']]
+   2233- ['sp|Q61496|DDX4_MOUSE'] subset of [['sp|Q62095|DDX3Y_MOUSE'], ['sp|P16381|DDX3L_MOUSE'], ['sp|Q62167|DDX3X_MOUSE']]
+   2268- ['sp|Q61781|K1C14_MOUSE'] subset of [['sp|Q6IFX2|K1C42_MOUSE'], ['CONT_082|gi|125080|sp|P02533|K1CN_HUMAN']]
+   2271- ['sp|Q61820|RANT_MOUSE'] subset of [['sp|P62827|RAN_MOUSE']]
+   2274- ['sp|Q61831|MK10_MOUSE', 'sp|Q91Y86|MK08_MOUSE'] subset of [['sp|Q9WTU6|MK09_MOUSE']]
+   2290- ['sp|Q62095|DDX3Y_MOUSE'] subset of [['sp|Q62167|DDX3X_MOUSE']]
+   2308- ['sp|Q62240|KDM5D_MOUSE'] subset of [['sp|P41230|KDM5C_MOUSE']]
+   2316- ['sp|Q62313|TGON1_MOUSE'] subset of [['sp|Q62314|TGON2_MOUSE']]
+   2329- ['sp|Q62420|SH3G2_MOUSE'] subset of [['sp|Q62419|SH3G1_MOUSE']]
+   2342- ['sp|Q63739|TP4A1_MOUSE'] subset of [['sp|O70274|TP4A2_MOUSE']]
+   2344- ['sp|Q63836|SBP2_MOUSE'] subset of [['sp|P17563|SBP1_MOUSE']]
+   2363- ['sp|Q641P0|ARP3B_MOUSE'] subset of [['sp|Q99JY9|ARP3_MOUSE']]
+   2382- ['sp|Q64436|ATP4A_MOUSE'] subset of [['sp|Q6PIE5|AT1A2_MOUSE'], ['sp|Q6PIC6|AT1A3_MOUSE'], ['sp|Q8VDN2|AT1A1_MOUSE']]
+   2383- ['sp|Q64437|ADH7_MOUSE'] subset of [['sp|P28474|ADHX_MOUSE']]
+   2393- ['sp|Q64522|H2A2B_MOUSE'] subset of [['sp|Q64523|H2A2C_MOUSE', 'sp|Q6GSS7|H2A2A_MOUSE']]
+   2404- ['sp|Q64G17|AN32C_MOUSE'] subset of [['sp|O35381|AN32A_MOUSE']]
+   2459- ['sp|Q6IFX2|K1C42_MOUSE'] subset of [['CONT_082|gi|125080|sp|P02533|K1CN_HUMAN']]
+   2461- ['sp|Q6IFZ9|K2C74_MOUSE', 'sp|Q9R0H5|K2C71_MOUSE'] subset of [['sp|Q6IFZ6|K2C1B_MOUSE'], ['sp|Q6NXH9|K2C73_MOUSE'], ['sp|P04104|K2C1_MOUSE'], ['CONT_064|gi|254622|bbs|112352', 'CONT_072|gi|547754|sp|P35908|K22E_HUMAN']]
+   2462- ['sp|Q6IME9|K2C72_MOUSE'] subset of [['CONT_048|gi|553163', 'CONT_070|gi|547752|sp|Q01546|K22O_HUMAN', 'CONT_071|gi|181400', 'CONT_118|gi|125098|sp|P12035|K2C3_HUMAN', 'CONT_142|gi|88053|pir||A29666', 'sp|P07744|K2C4_MOUSE', 'sp|P50446|K2C6A_MOUSE', 'sp|Q8BGZ7|K2C75_MOUSE', 'sp|Q8VED5|K2C79_MOUSE', 'sp|Q922U2|K2C5_MOUSE', 'sp|Q99M73|KRT84_MOUSE', 'sp|Q9Z331|K2C6B_MOUSE'], ['sp|Q6IFZ9|K2C74_MOUSE', 'sp|Q9R0H5|K2C71_MOUSE'], ['sp|Q3UV17|K22O_MOUSE'], ['sp|Q6IFZ6|K2C1B_MOUSE'], ['sp|Q6NXH9|K2C73_MOUSE'], ['tr|E9Q1Z0|E9Q1Z0_MOUSE'], ['CONT_084|gi|386850'], ['sp|P04104|K2C1_MOUSE'], ['sp|P11679|K2C8_MOUSE'], ['CONT_073|gi|87303|pir||JS0487', 'CONT_103|gi|2119212|pir||I37982', 'CONT_120|gi|125108|sp|P08729|K2C7_HUMAN', 'CONT_124|gi|105815|pir||A34720', 'CONT_140|gi|88045|pir||S05602', 'CONT_141|gi|88049|pir||B24177', 'CONT_179|gi|2506774|sp|P05787|K2C8_HUMAN', 'sp|Q9DCV7|K2C7_MOUSE'], ['sp|Q3TTY5|K22E_MOUSE'], ['CONT_049|gi|88052|pir||A32568', 'CONT_079|gi|125105|sp|P13647|K2C5_HUMAN'], ['CONT_083|gi|386849', 'CONT_130|gi|1346345|sp|P04259|K2CB_HUMAN', 'CONT_139|gi|71533|pir||KRHUEB'], ['CONT_129|gi|1346344|sp|P02538|K2CA_HUMAN', 'CONT_131|gi|1346346|sp|P48666|K2CC_HUMAN', 'CONT_132|gi|1346348|sp|P48668|K2CE_HUMAN'], ['CONT_133|gi|1346349|sp|P48669|K2CF_HUMAN'], ['CONT_064|gi|254622|bbs|112352', 'CONT_072|gi|547754|sp|P35908|K22E_HUMAN']]
+   2472- ['sp|Q6NTA4|RRAGB_MOUSE'] subset of [['sp|Q80X95|RRAGA_MOUSE']]
+   2483- ['sp|Q6NZA9|TAF9B_MOUSE'] subset of [['sp|Q8VI33|TAF9_MOUSE']]
+   2531- ['sp|Q6P9Z1|SMRD3_MOUSE'] subset of [['sp|Q99JR8|SMRD2_MOUSE']]
+   2560- ['sp|Q6PEE3|RIR2B_MOUSE'] subset of [['sp|P11157|RIR2_MOUSE']]
+   2561- ['sp|Q6PER3|MARE3_MOUSE'] subset of [['sp|Q61166|MARE1_MOUSE']]
+   2567- ['sp|Q6PGA0|RCOR3_MOUSE'] subset of [['sp|Q8CFE3|RCOR1_MOUSE']]
+   2569- ['sp|Q6PGB8|SMCA1_MOUSE'] subset of [['sp|Q91ZW3|SMCA5_MOUSE']]
+   2601- ['sp|Q6URW6|MYH14_MOUSE'] subset of [['sp|Q8VDD5|MYH9_MOUSE']]
+   2645- ['sp|Q6ZWR4|2ABB_MOUSE'] subset of [['sp|Q925E7|2ABD_MOUSE'], ['sp|Q6P1F6|2ABA_MOUSE']]
+   2665- ['sp|Q78JN3|ECI3_MOUSE'] subset of [['sp|Q9WUR2|ECI2_MOUSE']]
+   2701- ['sp|Q7TPS0|KS6A6_MOUSE'] subset of [['sp|P18654|KS6A3_MOUSE']]
+   2706- ['sp|Q7TQF7|AMPH_MOUSE'] subset of [['sp|O08539|BIN1_MOUSE'], ['sp|D3Z6Q9|BIN2_MOUSE']]
+   2715- ['sp|Q7TSE6|ST38L_MOUSE'] subset of [['sp|Q91VJ4|STK38_MOUSE']]
+   2726- ['sp|Q7TT45|RRAGD_MOUSE'] subset of [['sp|Q99K70|RRAGC_MOUSE']]
+   2735- ['sp|Q80TF4|KLH13_MOUSE'] subset of [['sp|Q6ZPT1|KLHL9_MOUSE']]
+   2748- ['sp|Q80TZ3|AUXI_MOUSE'] subset of [['sp|Q99KY4|GAK_MOUSE']]
+   2760- ['sp|Q80UE6|WNK4_MOUSE'] subset of [['sp|Q3UH66|WNK2_MOUSE'], ['sp|P83741|WNK1_MOUSE']]
+   2791- ['sp|Q80W03|TOX3_MOUSE'] subset of [['sp|Q8BU11|TOX4_MOUSE']]
+   2792- ['sp|Q80W14|PR40B_MOUSE'] subset of [['sp|Q9R1C7|PR40A_MOUSE']]
+   2793- ['sp|Q80W21|GSTM7_MOUSE'] subset of [['sp|P10649|GSTM1_MOUSE']]
+   2804- ['sp|Q80WS3|FBLL1_MOUSE'] subset of [['sp|P35550|FBRL_MOUSE']]
+   2810- ['sp|Q80X76|SPA3F_MOUSE'] subset of [['sp|Q5I2A0|SPA3G_MOUSE']]
+   2825- ['sp|Q80XP9|WNK3_MOUSE'] subset of [['sp|Q3UH66|WNK2_MOUSE'], ['sp|P83741|WNK1_MOUSE']]
+   2839- ['sp|Q80YP0|CDK3_MOUSE'] subset of [['sp|P97377|CDK2_MOUSE'], ['sp|P11440|CDK1_MOUSE']]
+   2851- ['sp|Q80ZJ1|RAP2A_MOUSE'] subset of [['sp|Q8BU31|RAP2C_MOUSE']]
+   2869- ['sp|Q811Q9|PCY1B_MOUSE'] subset of [['sp|P49586|PCY1A_MOUSE']]
+   2885- ['sp|Q8BG02|2ABG_MOUSE'] subset of [['sp|Q6P1F6|2ABA_MOUSE']]
+   2914- ['sp|Q8BGJ9|U2AF4_MOUSE'] subset of [['sp|Q9D883|U2AF1_MOUSE']]
+   2925- ['sp|Q8BGY2|IF5A2_MOUSE'] subset of [['sp|P63242|IF5A1_MOUSE']]
+   2971- ['sp|Q8BIK4|DOCK9_MOUSE'] subset of [['sp|A2AF47|DOC11_MOUSE']]
+   3043- ['sp|Q8BND4|INT6L_MOUSE'] subset of [['sp|Q6PCM2|INT6_MOUSE']]
+   3072- ['sp|Q8BRK8|AAPK2_MOUSE'] subset of [['sp|Q5EG47|AAPK1_MOUSE']]
+   3078- ['sp|Q8BSL7|ARF2_MOUSE'] subset of [['sp|P61205|ARF3_MOUSE', 'sp|P84078|ARF1_MOUSE']]
+   3085- ['sp|Q8BTH8|KC1G1_MOUSE'] subset of [['sp|Q8BVP5|KC1G2_MOUSE', 'sp|Q8C4X2|KC1G3_MOUSE']]
+   3116- ['sp|Q8BUN5|SMAD3_MOUSE'] subset of [['sp|Q62432|SMAD2_MOUSE']]
+   3147- ['sp|Q8BWL5|RBMS3_MOUSE'] subset of [['sp|Q91W59|RBMS1_MOUSE']]
+   3196- ['sp|Q8BZ98|DYN3_MOUSE'] subset of [['sp|P39054|DYN2_MOUSE']]
+   3222- ['sp|Q8C0N1|KIF2B_MOUSE'] subset of [['sp|P28740|KIF2A_MOUSE']]
+   3235- ['sp|Q8C196|CPSM_MOUSE'] subset of [['sp|B2RQC6|PYR1_MOUSE']]
+   3287- ['sp|Q8C9H6|STRP2_MOUSE'] subset of [['sp|Q8C079|STRP1_MOUSE']]
+   3310- ['sp|Q8CCK0|H2AW_MOUSE'] subset of [['sp|Q9QZQ8|H2AY_MOUSE']]
+   3362- ['sp|Q8CGP0|H2B3B_MOUSE', 'sp|Q9D2U9|H2B3A_MOUSE'] subset of [['sp|Q64524|H2B2E_MOUSE']]
+   3396- ['sp|Q8CIE2|ZMIZ2_MOUSE'] subset of [['sp|Q6P1E1|ZMIZ1_MOUSE']]
+   3409- ['sp|Q8CJF9|AGO3_MOUSE'] subset of [['sp|Q8CJG1|AGO1_MOUSE'], ['sp|Q8CJG0|AGO2_MOUSE']]
+   3420- ['sp|Q8JZS0|LIN7A_MOUSE'] subset of [['sp|O88952|LIN7C_MOUSE']]
+   3518- ['sp|Q8K386|RAB15_MOUSE'] subset of [['sp|P61027|RAB10_MOUSE'], ['sp|Q6PHN9|RAB35_MOUSE'], ['sp|P61028|RAB8B_MOUSE'], ['sp|P55258|RAB8A_MOUSE'], ['sp|Q9D1G1|RAB1B_MOUSE'], ['sp|P62821|RAB1A_MOUSE']]
+   3540- ['sp|Q8K4K6|PANK1_MOUSE'] subset of [['sp|Q8R2W9|PANK3_MOUSE'], ['tr|Q3U4S0|Q3U4S0_MOUSE']]
+   3652- ['sp|Q8R3L8|CDK8_MOUSE'] subset of [['sp|Q8BWD8|CDK19_MOUSE']]
+   3658- ['sp|Q8R3R8|GBRL1_MOUSE', 'sp|Q9DCD6|GBRAP_MOUSE'] subset of [['sp|P60521|GBRL2_MOUSE']]
+   3672- ['sp|Q8R4U6|TOP1M_MOUSE'] subset of [['sp|Q04750|TOP1_MOUSE']]
+   3714- ['sp|Q8VCH0|THIKB_MOUSE'] subset of [['sp|Q921H8|THIKA_MOUSE']]
+   3715- ['sp|Q8VCH2|CLM5_MOUSE'] subset of [['sp|Q6SJQ7|CLM1_MOUSE']]
+   3721- ['sp|Q8VCK3|TBG2_MOUSE'] subset of [['sp|P83887|TBG1_MOUSE']]
+   3725- ['sp|Q8VCR2|DHB13_MOUSE'] subset of [['sp|Q9EQ06|DHB11_MOUSE']]
+   3781- ['sp|Q8VE92|RBM4B_MOUSE'] subset of [['sp|Q8C7Q4|RBM4_MOUSE']]
+   3785- ['sp|Q8VEB1|GRK5_MOUSE'] subset of [['sp|O70293|GRK6_MOUSE']]
+   3806- ['sp|Q8VHJ5|MARK1_MOUSE'] subset of [['sp|Q03141|MARK3_MOUSE'], ['sp|Q05512|MARK2_MOUSE']]
+   3810- ['sp|Q8VHP7|ILEUB_MOUSE'] subset of [['sp|Q9D154|ILEUA_MOUSE']]
+   3894- ['sp|Q91WG0|EST2C_MOUSE'] subset of [['tr|E9PV38|E9PV38_MOUSE']]
+   3897- ['sp|Q91WG5|AAKG2_MOUSE'] subset of [['sp|O54950|AAKG1_MOUSE']]
+   3909- ['sp|Q91WP6|SPA3N_MOUSE'] subset of [['sp|Q5I2A0|SPA3G_MOUSE']]
+   3924- ['sp|Q91X83|METK1_MOUSE'] subset of [['sp|Q3THS6|METK2_MOUSE']]
+   3928- ['sp|Q91XD2|LIMS2_MOUSE'] subset of [['sp|Q99JW4|LIMS1_MOUSE']]
+   3976- ['sp|Q91Z69|SRGP1_MOUSE'] subset of [['sp|Q91Z67|SRGP2_MOUSE']]
+   4000- ['sp|Q920M5|CORO6_MOUSE'] subset of [['sp|Q9WUM4|COR1C_MOUSE']]
+   4014- ['sp|Q921I1|TRFE_MOUSE'] subset of [['tr|E9Q035|E9Q035_MOUSE']]
+   4065- ['sp|Q922W5|P5CR1_MOUSE'] subset of [['sp|Q922Q4|P5CR2_MOUSE']]
+   4087- ['sp|Q925E7|2ABD_MOUSE'] subset of [['sp|Q6P1F6|2ABA_MOUSE']]
+   4094- ['sp|Q99388|CSPRS_MOUSE'] subset of [['sp|O35892|SP100_MOUSE']]
+   4208- ['sp|Q99LU0|CH1B1_MOUSE'] subset of [['sp|Q9CQD4|CH1B2_MOUSE']]
+   4253- ['sp|Q99P58|RB27B_MOUSE'] subset of [['sp|Q9ERI2|RB27A_MOUSE']]
+   4293- ['sp|Q9CQ19|MYL9_MOUSE'] subset of [['sp|Q3THE2|ML12B_MOUSE']]
+   4294- ['sp|Q9CQ21|MCTS2_MOUSE'] subset of [['sp|Q9DB27|MCTS1_MOUSE']]
+   4429- ['sp|Q9CWH6|PSMA8_MOUSE'] subset of [['sp|Q9Z2U0|PSA7_MOUSE']]
+   4470- ['sp|Q9CXP8|GBG10_MOUSE'] subset of [['tr|G3UZK1|G3UZK1_MOUSE']]
+   4587- ['sp|Q9D110|MTHFS_MOUSE'] subset of [['tr|L7N466|L7N466_MOUSE']]
+   4665- ['sp|Q9D593|VATE2_MOUSE'] subset of [['sp|P50518|VATE1_MOUSE']]
+   4683- ['sp|Q9D6P8|CALL3_MOUSE'] subset of [['sp|P0DP26|CALM1_MOUSE', 'sp|P0DP27|CALM2_MOUSE', 'sp|P0DP28|CALM3_MOUSE']]
+   4784- ['sp|Q9DB16|CB39L_MOUSE'] subset of [['sp|Q06138|CAB39_MOUSE']]
+   4928- ['sp|Q9ER64|OSBL5_MOUSE'] subset of [['sp|B9EJ86|OSBL8_MOUSE']]
+   5016- ['sp|Q9JIB3|BIR1G_MOUSE', 'sp|Q9QWK5|BIR1A_MOUSE', 'sp|Q9R016|BIR1E_MOUSE'] subset of [['sp|Q9QUK4|BIR1B_MOUSE']]
+   5054- ['sp|Q9JJW6|ALRF2_MOUSE'] subset of [['sp|O08583|THOC4_MOUSE']]
+   5065- ['sp|Q9JK42|PDK2_MOUSE'] subset of [['sp|Q922H2|PDK3_MOUSE']]
+   5100- ['sp|Q9JLR1|S61A2_MOUSE'] subset of [['sp|P61620|S61A1_MOUSE']]
+   5115- ['sp|Q9JME5|AP3B2_MOUSE'] subset of [['sp|Q9Z1T1|AP3B1_MOUSE']]
+   5135- ['sp|Q9QWT9|KIFC1_MOUSE'] subset of [['tr|E9PUA5|E9PUA5_MOUSE']]
+   5238- ['sp|Q9R0K7|AT2B2_MOUSE'] subset of [['sp|G5E829|AT2B1_MOUSE']]
+   5273- ['sp|Q9R1Q8|TAGL3_MOUSE'] subset of [['sp|Q9WVA4|TAGL2_MOUSE']]
+   5280- ['sp|Q9R226|KHDR3_MOUSE', 'sp|Q9WU01|KHDR2_MOUSE'] subset of [['sp|Q60749|KHDR1_MOUSE']]
+   5284- ['sp|Q9WTJ8|FA50B_MOUSE'] subset of [['sp|Q9WV03|FA50A_MOUSE']]
+   5312- ['sp|Q9WU65|GLPK2_MOUSE'] subset of [['sp|Q64516|GLPK_MOUSE']]
+   5318- ['sp|Q9WUA6|AKT3_MOUSE'] subset of [['sp|Q60823|AKT2_MOUSE'], ['sp|P31750|AKT1_MOUSE']]
+   5343- ['sp|Q9WV27|AT1A4_MOUSE'] subset of [['sp|Q6PIE5|AT1A2_MOUSE'], ['sp|Q6PIC6|AT1A3_MOUSE'], ['sp|Q8VDN2|AT1A1_MOUSE']]
+   5360- ['sp|Q9WVB2|TLE2_MOUSE'] subset of [['sp|Q62440|TLE1_MOUSE', 'sp|Q62441|TLE4_MOUSE'], ['sp|Q08122|TLE3_MOUSE']]
+   5374- ['sp|Q9WVP6|PAPOB_MOUSE'] subset of [['sp|Q61183|PAPOA_MOUSE']]
+   5382- ['sp|Q9Z0G2|SRPK3_MOUSE'] subset of [['sp|O54781|SRPK2_MOUSE'], ['sp|O70551|SRPK1_MOUSE']]
+   5392- ['sp|Q9Z0N2|IF2H_MOUSE'] subset of [['sp|Q9Z0N1|IF2G_MOUSE']]
+   5418- ['sp|Q9Z188|DYR1B_MOUSE'] subset of [['sp|Q61214|DYR1A_MOUSE']]
+   5445- ['sp|Q9Z1W8|AT12A_MOUSE'] subset of [['sp|Q8VDN2|AT1A1_MOUSE']]
+   5446- ['sp|Q9Z1W9|STK39_MOUSE'] subset of [['sp|Q6P9R2|OXSR1_MOUSE']]
+   5461- ['sp|Q9Z2C8|YBOX2_MOUSE'] subset of [['sp|Q9JKB3|YBOX3_MOUSE'], ['sp|P62960|YBOX1_MOUSE']]
+   5475- ['sp|Q9Z2K1|K1C16_MOUSE'] subset of [['CONT_075|gi|1346342|sp|P08779|K1CX_HUMAN', 'CONT_117|gi|88047|pir||A24843'], ['CONT_156|gi|1363944|pir||JC4313']]
+   5484- ['sp|Q9Z2S7|T22D3_MOUSE'] subset of [['sp|P62500|T22D1_MOUSE'], ['tr|E9Q7M2|E9Q7M2_MOUSE'], ['sp|Q9EQN3|T22D4_MOUSE']]
+   5490- ['sp|Q9Z2W1|STK25_MOUSE'] subset of [['sp|Q99JT2|STK26_MOUSE']]
+   5496- ['sp|Q9Z2Z9|GFPT2_MOUSE'] subset of [['sp|P47856|GFPT1_MOUSE']]
+   5500- ['tr|A0A075B5U7|A0A075B5U7_MOUSE', 'tr|A0A075B5V2|A0A075B5V2_MOUSE', 'tr|A0A075B5Y4|A0A075B5Y4_MOUSE', 'tr|A0A0A6YVW3|A0A0A6YVW3_MOUSE', 'tr|A0A0A6YWK5|A0A0A6YWK5_MOUSE', 'tr|A0A0A6YXA5|A0A0A6YXA5_MOUSE', 'tr|A0A0A6YXN4|A0A0A6YXN4_MOUSE'] subset of [['tr|A0A075B5V0|A0A075B5V0_MOUSE']]
+   5504- ['tr|A0A087WQ54|A0A087WQ54_MOUSE'] subset of [['sp|Q8K310|MATR3_MOUSE']]
+   5505- ['tr|A0A0A6YW33|A0A0A6YW33_MOUSE'] subset of [['sp|P83882|RL36A_MOUSE']]
+   5506- ['tr|A0A0A6YWX0|A0A0A6YWX0_MOUSE'] subset of [['sp|P06330|HVM51_MOUSE'], ['tr|A0A075B5V0|A0A075B5V0_MOUSE']]
+   5507- ['tr|A0A0A6YXN8|A0A0A6YXN8_MOUSE'] subset of [['tr|K7N6K7|K7N6K7_MOUSE']]
+   5510- ['tr|A0A0B4J1F3|A0A0B4J1F3_MOUSE'] subset of [['sp|P97484|LIRB3_MOUSE']]
+   5511- ['tr|A0A0G2JEA5|A0A0G2JEA5_MOUSE'] subset of [['sp|Q920E5|FPPS_MOUSE']]
+   5512- ['tr|A0A0G2JFU6|A0A0G2JFU6_MOUSE'] subset of [['sp|P04940|KV6A6_MOUSE', 'sp|P04941|KV6A7_MOUSE', 'sp|P04943|KV6A9_MOUSE', 'sp|P04944|KV6AA_MOUSE', 'tr|A0A0B4J1I8|A0A0B4J1I8_MOUSE']]
+   5514- ['tr|A0A0N4SUH6|A0A0N4SUH6_MOUSE'] subset of [['sp|Q9CWZ3|RBM8A_MOUSE']]
+   5515- ['tr|A0A0N4SUM8|A0A0N4SUM8_MOUSE'] subset of [['sp|Q69ZQ2|ISY1_MOUSE']]
+   5516- ['tr|A0A0N4SVE0|A0A0N4SVE0_MOUSE'] subset of [['sp|Q9DCW4|ETFB_MOUSE']]
+   5517- ['tr|A0A0N4SVP8|A0A0N4SVP8_MOUSE'] subset of [['sp|Q91VC3|IF4A3_MOUSE']]
+   5519- ['tr|A0A0U1RNP2|A0A0U1RNP2_MOUSE'] subset of [['sp|E9PYH6|SET1A_MOUSE']]
+   5520- ['tr|A0A0U1RNZ6|A0A0U1RNZ6_MOUSE'] subset of [['sp|P57784|RU2A_MOUSE']]
+   5522- ['tr|A0A140T8I4|A0A140T8I4_MOUSE'] subset of [['sp|Q8CFI2|UB2R1_MOUSE']]
+   5523- ['tr|A0A140T8K2|A0A140T8K2_MOUSE'] subset of [['sp|P19253|RL13A_MOUSE', 'tr|A0A1B0GS68|A0A1B0GS68_MOUSE']]
+   5524- ['tr|A0A140T8T4|A0A140T8T4_MOUSE'] subset of [['sp|P51410|RL9_MOUSE']]
+   5525- ['tr|A0A140T8V5|A0A140T8V5_MOUSE'] subset of [['sp|P17918|PCNA_MOUSE']]
+   5526- ['tr|A0A1B0GRG8|A0A1B0GRG8_MOUSE'] subset of [['sp|P48758|CBR1_MOUSE']]
+   5528- ['tr|A0A1B0GT68|A0A1B0GT68_MOUSE'] subset of [['sp|Q99J93|IFM2_MOUSE']]
+   5529- ['tr|A0A1D5RLD8|A0A1D5RLD8_MOUSE'] subset of [['sp|P16858|G3P_MOUSE']]
+   5530- ['tr|A0A1W2P6Q8|A0A1W2P6Q8_MOUSE', 'tr|A0A1W2P855|A0A1W2P855_MOUSE'] subset of [['tr|A0A1W2P7H4|A0A1W2P7H4_MOUSE', 'tr|A0A1W2P7Z8|A0A1W2P7Z8_MOUSE'], ['sp|Q6A068|CDC5L_MOUSE']]
+   5531- ['tr|A0A1W2P7H4|A0A1W2P7H4_MOUSE', 'tr|A0A1W2P7Z8|A0A1W2P7Z8_MOUSE'] subset of [['sp|Q6A068|CDC5L_MOUSE']]
+   5533- ['tr|A0A1Y7VJE9|A0A1Y7VJE9_MOUSE', 'tr|A0A1Y7VK80|A0A1Y7VK80_MOUSE', 'tr|J3QNT6|J3QNT6_MOUSE', 'tr|J3QP87|J3QP87_MOUSE', 'tr|Q3TQZ4|Q3TQZ4_MOUSE', 'tr|Q3UTA4|Q3UTA4_MOUSE'] subset of [['sp|Q60872|IF1A_MOUSE']]
+   5534- ['tr|A0A1Y7VLT7|A0A1Y7VLT7_MOUSE', 'tr|A0A1Y7VNG9|A0A1Y7VNG9_MOUSE', 'tr|J3QPI8|J3QPI8_MOUSE', 'tr|J3QQ02|J3QQ02_MOUSE'] subset of [['tr|A0A1Y7VJE9|A0A1Y7VJE9_MOUSE', 'tr|A0A1Y7VK80|A0A1Y7VK80_MOUSE', 'tr|J3QNT6|J3QNT6_MOUSE', 'tr|J3QP87|J3QP87_MOUSE', 'tr|Q3TQZ4|Q3TQZ4_MOUSE', 'tr|Q3UTA4|Q3UTA4_MOUSE'], ['sp|Q60872|IF1A_MOUSE'], ['sp|Q8BMJ3|IF1AX_MOUSE']]
+   5535- ['tr|A0A1Y7VP24|A0A1Y7VP24_MOUSE'] subset of [['sp|Q9QZ73|DCNL1_MOUSE']]
+   5537- ['tr|A0A2I3BPG9|A0A2I3BPG9_MOUSE'] subset of [['sp|P83882|RL36A_MOUSE']]
+   5538- ['tr|A0A2I3BQH2|A0A2I3BQH2_MOUSE'] subset of [['sp|P23492|PNPH_MOUSE']]
+   5540- ['tr|A0A2R8VHF3|A0A2R8VHF3_MOUSE'] subset of [['sp|P05213|TBA1B_MOUSE'], ['sp|P68369|TBA1A_MOUSE'], ['sp|P68373|TBA1C_MOUSE']]
+   5541- ['tr|A0A2R8W6I7|A0A2R8W6I7_MOUSE'] subset of [['sp|P55194|3BP1_MOUSE']]
+   5545- ['tr|A2A4X6|A2A4X6_MOUSE'] subset of [['sp|P84104|SRSF3_MOUSE']]
+   5546- ['tr|A2A5N3|A2A5N3_MOUSE'] subset of [['sp|P29341|PABP1_MOUSE']]
+   5552- ['tr|A2AK42|A2AK42_MOUSE', 'tr|A2AK44|A2AK44_MOUSE'] subset of [['sp|Q8C5N3|CWC22_MOUSE']]
+   5553- ['tr|A2ALC6|A2ALC6_MOUSE'] subset of [['sp|P47226|TES_MOUSE']]
+   5554- ['tr|A2AMD0|A2AMD0_MOUSE'] subset of [['sp|Q05CL8|LARP7_MOUSE']]
+   5559- ['tr|A2AWR5|A2AWR5_MOUSE'] subset of [['sp|O88627|S28A2_MOUSE']]
+   5561- ['tr|A6ZI47|A6ZI47_MOUSE'] subset of [['sp|P05064|ALDOA_MOUSE']]
+   5565- ['tr|B1AR17|B1AR17_MOUSE'] subset of [['sp|Q6PDQ2|CHD4_MOUSE']]
+   5575- ['tr|B2RXM2|B2RXM2_MOUSE'] subset of [['sp|Q8BG05|ROA3_MOUSE']]
+   5577- ['tr|B2RY53|B2RY53_MOUSE'] subset of [['sp|Q9CPR4|RL17_MOUSE']]
+   5580- ['tr|D3YTY6|D3YTY6_MOUSE'] subset of [['sp|P62751|RL23A_MOUSE']]
+   5581- ['tr|D3YUM8|D3YUM8_MOUSE'] subset of [['sp|Q9R1P1|PSB3_MOUSE']]
+   5582- ['tr|D3YVI9|D3YVI9_MOUSE'] subset of [['sp|P15533|TR30A_MOUSE']]
+   5583- ['tr|D3YYZ2|D3YYZ2_MOUSE'] subset of [['sp|P0CG49|UBB_MOUSE', 'sp|P0CG50|UBC_MOUSE', 'sp|P62984|RL40_MOUSE', 'tr|A0A0A6YW67|A0A0A6YW67_MOUSE'], ['sp|P62983|RS27A_MOUSE']]
+   5589- ['tr|D3Z450|D3Z450_MOUSE'] subset of [['sp|Q80X76|SPA3F_MOUSE'], ['sp|Q5I2A0|SPA3G_MOUSE']]
+   5590- ['tr|D3Z536|D3Z536_MOUSE'] subset of [['sp|P25444|RS2_MOUSE']]
+   5593- ['tr|E0CXC2|E0CXC2_MOUSE'] subset of [['sp|Q9DBC3|CMTR1_MOUSE']]
+   5597- ['tr|E9PV04|E9PV04_MOUSE'] subset of [['tr|A0A0N4SVP8|A0A0N4SVP8_MOUSE'], ['sp|Q91VC3|IF4A3_MOUSE']]
+   5599- ['tr|E9PV48|E9PV48_MOUSE'] subset of [['sp|Q64345|IFIT3_MOUSE']]
+   5603- ['tr|E9PWL0|E9PWL0_MOUSE'] subset of [['sp|P15533|TR30A_MOUSE']]
+   5608- ['tr|E9PWZ3|E9PWZ3_MOUSE'] subset of [['sp|P27659|RL3_MOUSE']]
+   5615- ['tr|E9PYL9|E9PYL9_MOUSE'] subset of [['sp|Q9CXW4|RL11_MOUSE']]
+   5627- ['tr|E9Q1F5|E9Q1F5_MOUSE'] subset of [['sp|Q99104|MYO5A_MOUSE']]
+   5629- ['tr|E9Q1Z0|E9Q1Z0_MOUSE'] subset of [['CONT_073|gi|87303|pir||JS0487', 'CONT_103|gi|2119212|pir||I37982', 'CONT_120|gi|125108|sp|P08729|K2C7_HUMAN', 'CONT_124|gi|105815|pir||A34720', 'CONT_140|gi|88045|pir||S05602', 'CONT_141|gi|88049|pir||B24177', 'CONT_179|gi|2506774|sp|P05787|K2C8_HUMAN', 'sp|Q9DCV7|K2C7_MOUSE']]
+   5632- ['tr|E9Q264|E9Q264_MOUSE'] subset of [['sp|Q02566|MYH6_MOUSE'], ['sp|P13541|MYH3_MOUSE'], ['sp|P13542|MYH8_MOUSE'], ['tr|G3UW82|G3UW82_MOUSE'], ['sp|Q5SX39|MYH4_MOUSE'], ['sp|Q5SX40|MYH1_MOUSE']]
+   5637- ['tr|E9Q3T0|E9Q3T0_MOUSE'] subset of [['sp|P47955|RLA1_MOUSE']]
+   5640- ['tr|E9Q5E2|E9Q5E2_MOUSE'] subset of [['sp|B1AZI6|THOC2_MOUSE']]
+   5644- ['tr|E9Q7L0|E9Q7L0_MOUSE'] subset of [['sp|Q60597|ODO1_MOUSE']]
+   5656- ['tr|F6RSK3|F6RSK3_MOUSE'] subset of [['sp|Q8BP67|RL24_MOUSE']]
+   5657- ['tr|F6RWR5|F6RWR5_MOUSE'] subset of [['sp|P46425|GSTP2_MOUSE'], ['sp|P19157|GSTP1_MOUSE']]
+   5659- ['tr|F6Y363|F6Y363_MOUSE'] subset of [['sp|P15626|GSTM2_MOUSE']]
+   5660- ['tr|F6Y6L6|F6Y6L6_MOUSE'] subset of [['sp|P18242|CATD_MOUSE']]
+   5661- ['tr|F6YNI8|F6YNI8_MOUSE'] subset of [['tr|Q8BX20|Q8BX20_MOUSE'], ['tr|A0A1Y7VJE9|A0A1Y7VJE9_MOUSE', 'tr|A0A1Y7VK80|A0A1Y7VK80_MOUSE', 'tr|J3QNT6|J3QNT6_MOUSE', 'tr|J3QP87|J3QP87_MOUSE', 'tr|Q3TQZ4|Q3TQZ4_MOUSE', 'tr|Q3UTA4|Q3UTA4_MOUSE'], ['sp|Q60872|IF1A_MOUSE']]
+   5662- ['tr|F7BCN0|F7BCN0_MOUSE'] subset of [['sp|Q8K4M5|COMD1_MOUSE']]
+   5664- ['tr|F8VPN3|F8VPN3_MOUSE'] subset of [['sp|P17742|PPIA_MOUSE']]
+   5666- ['tr|F8VPU6|F8VPU6_MOUSE'] subset of [['sp|P70398|USP9X_MOUSE']]
+   5674- ['tr|G3UWD7|G3UWD7_MOUSE'] subset of [['sp|Q6ZWV7|RL35_MOUSE']]
+   5675- ['tr|G3UXE9|G3UXE9_MOUSE'] subset of [['sp|P01898|HA10_MOUSE'], ['tr|O19441|O19441_MOUSE'], ['tr|Q8HWB2|Q8HWB2_MOUSE']]
+   5683- ['tr|G3X9G9|G3X9G9_MOUSE'] subset of [['tr|Q5I0W6|Q5I0W6_MOUSE', 'tr|Q76I26|Q76I26_MOUSE', 'tr|Q8C6B0|Q8C6B0_MOUSE']]
+   5684- ['tr|G3X9Y6|G3X9Y6_MOUSE'] subset of [['sp|Q8VC28|AK1CD_MOUSE']]
+   5687- ['tr|J3QN38|J3QN38_MOUSE'] subset of [['sp|Q3TXS7|PSMD1_MOUSE']]
+   5689- ['tr|J3QPY3|J3QPY3_MOUSE'] subset of [['sp|Q9WUD8|FAIM1_MOUSE']]
+   5691- ['tr|L7N257|L7N257_MOUSE'] subset of [['tr|Q497J0|Q497J0_MOUSE']]
+   5696- ['tr|Q0VF55|Q0VF55_MOUSE'] subset of [['sp|G5E829|AT2B1_MOUSE']]
+   5697- ['tr|Q14AA6|Q14AA6_MOUSE'] subset of [['sp|P62827|RAN_MOUSE']]
+   5701- ['tr|Q2V6D6|Q2V6D6_MOUSE'] subset of [['tr|Q8BTS3|Q8BTS3_MOUSE']]
+   5714- ['tr|Q3ULQ2|Q3ULQ2_MOUSE'] subset of [['sp|Q9QUR7|PIN1_MOUSE']]
+   5718- ['tr|Q4KN81|Q4KN81_MOUSE'] subset of [['tr|Q8HWB2|Q8HWB2_MOUSE']]
+   5721- ['tr|Q5NCB2|Q5NCB2_MOUSE'] subset of [['tr|Q5NCB3|Q5NCB3_MOUSE', 'tr|Q5SVP0|Q5SVP0_MOUSE']]
+   5727- ['tr|Q68FG2|Q68FG2_MOUSE'] subset of [['tr|E9PX29|E9PX29_MOUSE'], ['sp|P15508|SPTB1_MOUSE'], ['sp|Q62261|SPTB2_MOUSE']]
+   5731- ['tr|Q6IE28|Q6IE28_MOUSE'] subset of [['sp|P35175|CYT1_MOUSE'], ['tr|L7N257|L7N257_MOUSE'], ['tr|Q497J0|Q497J0_MOUSE'], ['sp|P35173|CYT3_MOUSE']]
+   5735- ['tr|Q6NXL5|Q6NXL5_MOUSE'] subset of [['sp|Q6ZQK5|ACAP2_MOUSE']]
+   5739- ['tr|Q6PDB7|Q6PDB7_MOUSE'] subset of [['tr|E9PV38|E9PV38_MOUSE']]
+   5743- ['tr|Q6UY53|Q6UY53_MOUSE'] subset of [['sp|Q6PGH2|JUPI2_MOUSE']]
+   5749- ['tr|Q80X68|Q80X68_MOUSE'] subset of [['sp|Q9CZU6|CISY_MOUSE']]
+   5750- ['tr|Q80X81|Q80X81_MOUSE'] subset of [['sp|Q8CAY6|THIC_MOUSE']]
+   5753- ['tr|Q80ZS7|Q80ZS7_MOUSE'] subset of [['sp|P63168|DYL1_MOUSE']]
+   5755- ['tr|Q8BG37|Q8BG37_MOUSE'] subset of [['sp|O08709|PRDX6_MOUSE']]
+   5760- ['tr|Q8BX20|Q8BX20_MOUSE'] subset of [['tr|A0A1Y7VJE9|A0A1Y7VJE9_MOUSE', 'tr|A0A1Y7VK80|A0A1Y7VK80_MOUSE', 'tr|J3QNT6|J3QNT6_MOUSE', 'tr|J3QP87|J3QP87_MOUSE', 'tr|Q3TQZ4|Q3TQZ4_MOUSE', 'tr|Q3UTA4|Q3UTA4_MOUSE'], ['sp|Q60872|IF1A_MOUSE']]
+   5762- ['tr|Q8C5R8|Q8C5R8_MOUSE'] subset of [['sp|Q9D7G0|PRPS1_MOUSE', 'tr|G3UXL2|G3UXL2_MOUSE']]
+   5763- ['tr|Q8C635|Q8C635_MOUSE'] subset of [['sp|Q64516|GLPK_MOUSE']]
+   5764- ['tr|Q8C7D3|Q8C7D3_MOUSE'] subset of [['sp|P29341|PABP1_MOUSE']]
+   5773- ['tr|Q8K469|Q8K469_MOUSE'] subset of [['sp|P11928|OAS1A_MOUSE']]
+   5774- ['tr|Q8R5I6|Q8R5I6_MOUSE'] subset of [['sp|P15626|GSTM2_MOUSE']]
+   5780- ['tr|Q91YH6|Q91YH6_MOUSE'] subset of [['sp|P62814|VATB2_MOUSE']]
+   5784- ['tr|Q9CR99|Q9CR99_MOUSE'] subset of [['sp|Q62159|RHOC_MOUSE'], ['sp|Q9QUI0|RHOA_MOUSE']]
+   5785- ['tr|Q9D4E6|Q9D4E6_MOUSE'] subset of [['sp|P29341|PABP1_MOUSE']]
+   5786- ['tr|Q9D8C9|Q9D8C9_MOUSE'] subset of [['sp|P23492|PNPH_MOUSE']]
+   5787- ['tr|Q9D8D6|Q9D8D6_MOUSE'] subset of [['tr|B2RV77|B2RV77_MOUSE']]
+   5793- ['tr|Q9JLI0|Q9JLI0_MOUSE'] subset of [['sp|Q8VC28|AK1CD_MOUSE']]
+   5797- ['tr|S4R1R7|S4R1R7_MOUSE'] subset of [['tr|A0A140T8T4|A0A140T8T4_MOUSE'], ['sp|P51410|RL9_MOUSE']]
+   5800- ['tr|V9GWY0|V9GWY0_MOUSE'] subset of [['sp|P62702|RS4X_MOUSE']]
+   5802- ['tr|V9GX31|V9GX31_MOUSE'] subset of [['sp|P17742|PPIA_MOUSE']]
+   5803- ['tr|V9GX35|V9GX35_MOUSE'] subset of [['sp|P12970|RL7A_MOUSE']]
+   5806- ['tr|V9GXR0|V9GXR0_MOUSE'] subset of [['tr|G3UXE9|G3UXE9_MOUSE'], ['tr|Q4KN81|Q4KN81_MOUSE'], ['sp|P01898|HA10_MOUSE'], ['tr|O19441|O19441_MOUSE'], ['tr|Q8HWB2|Q8HWB2_MOUSE']]
+   5807- ['tr|W4VSN7|W4VSN7_MOUSE'] subset of [['sp|P47915|RL29_MOUSE', 'tr|F6QL70|F6QL70_MOUSE']]
+
+   length of proteins is: 5462
+
+...opening FASTA database: 2019.01_UP000000589_10090_Mus_musculus_canonical_both.fasta
+...closing database (44930 entries)...
+...done updating accessions and descriptions...
+...ms2 filename maps created...
+...proteins and peptides sorted and counted...
+...valid proteins: 5462(39) [rejected proteins: 0(0)]
+Valid proteins: 5462(39) [rejected proteins: 0(0)]
+Ending PAW_results (v1.0.8) at: Fri Feb  8 15:55:01 2019
