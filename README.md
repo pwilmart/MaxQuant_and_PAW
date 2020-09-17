@@ -31,7 +31,7 @@
 > Older MaxQuant version was used. Both PAW and MaxQuant results are in the same notebook.
 
 ## Data is from this publication:
-> Huan, J., Hornick, N.I., Goloviznina, N.A., Kamimae-Lanning, A.N., David, L.L., Wilmarth, P.A., Mori, T., Chevillet, J.R., Narla, A., Roberts Jr, C.T. and Loriaux, M.M., 2015. Coordinate regulation of residual bone marrow function by paracrine trafficking of AML exosomes. Leukemia, 29(12), p.2285.
+> Huan, J., Hornick, N.I., Goloviznina, N.A., Kamimae-Lanning, A.N., David, L.L., Wilmarth, P.A., Mori, T., Chevillet, J.R., Narla, A., Roberts Jr, C.T., Loriaux, M.M., Chang, B.H., and Kurre, P. 2015. Coordinate regulation of residual bone marrow function by paracrine trafficking of AML exosomes. Leukemia, 29(12), p.2285.
 
 This was a mouse bone marrow cell culture experiment with controls (n=3) and leukemia exosome-dosed cells (n=4). The data was collected on a Thermo Fusion tribrid instrument using the SPS MS3 method. Two free data analysis options were explored: the [Comet/PAW pipeline](https://github.com/pwilmart/PAW_pipeline.git) or [MaxQuant](https://www.maxquant.org). A canonical UniProt mouse reference protein database was used in both analyses. More details on the search parameters are in the respective notebooks. There are two folders of results files: one for PAW and one for MaxQuant. Each folder has separate Jupyter notebooks for the TMT analysis. The notebooks are very similar in layout and are designed to be opened in side-by-side browser windows for a head-to-head comparison. Some of the markdown cells (mostly in the MaxQuant notebook) differ to illustrate important points. The notebooks are pre-rendered as HTML files and have links at the top of this file.
 
